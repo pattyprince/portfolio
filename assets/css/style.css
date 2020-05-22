@@ -123,6 +123,24 @@ header .fa-times {
   font-size: 2rem;
 }
 
+.nav__menu-list a {
+  width: 100%;
+}
+
+.nav__menu-list a::after {
+  content: "";
+  width: 0%;
+  background-color: var(--clr-black);
+  height: 2px;
+  display: block;
+  transition: 0.3s;
+  margin: 0 0;
+}
+
+.nav__menu-list a:hover::after {
+  width: 100%;
+}
+
 .nav__social {
   display: flex;
   justify-content: space-evenly;
@@ -138,7 +156,6 @@ header .fa-times {
   background-color: #a1fff2;
   background-image: linear-gradient(0deg, #a1fff2 0%, #c168b0 92%);
   height: 100vh;
-  border: 1px solid blue;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -146,19 +163,28 @@ header .fa-times {
 
 .main__hero {
   height: calc(80vh - 3rem);
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .main__hero-left {
-  border: 1px solid yellow;
+  text-align: center;
   width: 60%;
 }
+
+.main__hero-left h1 {
+  font-size: 5rem;
+  color: var(--clr-white);
+  text-shadow: 0px 3px 10px var(--clr-black);
+}
+
+.main__hero-left p {
+  font-size: 3rem;
+  color: var(--clr-black);
+}
 .main__hero-right {
-  border: 1px solid green;
-  width: 40%;
+  width: calc(100% / 8);
 }
 .main__hero-right img {
   width: 100%;
@@ -166,12 +192,16 @@ header .fa-times {
 }
 
 .chevron__container {
-  border: 1px solid green;
   text-align: center;
   animation-duration: 5s;
 }
 .chevron__container i {
   font-size: 2rem;
+}
+
+.main__content {
+  margin: 0 auto;
+  max-width: 1500px;
 }
 
 /* MAIN */
@@ -186,7 +216,7 @@ header .fa-times {
 
 .section-title {
   color: #333;
-  font-size: 5.5rem;
+  font-size: 3rem;
   margin: 0;
 }
 
@@ -194,12 +224,16 @@ header .fa-times {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
+  border: solid 1px yellow;
 }
 
 .about__portrait {
+  border: solid 1px red;
+  width: 50%;
+  height: 100%;
 }
 .about__portrait img {
-  width: 200px;
+  width: 100%;
   box-shadow: 0px 0px 4px 0px #333;
 }
 
@@ -207,10 +241,15 @@ header .fa-times {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border: solid 1px red;
+  width: 100%;
+  height: 100%;
 }
 .about__description p {
   line-height: 1.5;
-  margin: 30px 0;
+
+  font-size: 1.8rem;
+  padding: 1.5rem;
 }
 
 .about__description span {
@@ -264,4 +303,5 @@ header .fa-times {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 0.6rem;
 }
