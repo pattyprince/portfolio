@@ -1,10 +1,211 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,800;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Patricia Portafolio</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <p>Patricia Prince</p>
+      </div>
+      <div class="menu-toggle">
+        <i class="fas fa-bars" onclick="{handleToggleMenu()}"></i>
+      </div>
+      <div class="overlay" onclick="{handleToggleMenu()}"></div>
+
+      <nav class="nav">
+        <i class="fas fa-times" onclick="{handleToggleMenu()}"></i>
+
+        <div class="nav__menu-list">
+          <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">UX/UI</a></li>
+            <li><a href="#">COMUNICACIONES</a></li>
+            <li><a href="#">VISUAL</a></li>
+            <li><a href="#">CONTACTO</a></li>
+          </ul>
+          <div class="nav__social">
+            <p><i class="fab fa-twitter"></i></p>
+            <p><i class="fab fa-linkedin"></i></p>
+            <p><i class="fab fa-instagram"></i></p>
+            <p><i class="fab fa-github"></i></p>
+          </div>
+        </div>
+      </nav>
+
+      <main class="main">
+        <div class="main__hero">
+          <div class="main__hero-left">
+            <h1>Patricia Prince</h1>
+            <p>UX Designer</p>
+          </div>
+          <div class="main__hero-right">
+            <img src="./assets/images/brain-min.png" alt="decorativa cerebro" />
+          </div>
+        </div>
+        <div
+          class="chevron__container animate__animated animate__shakeY animate__repeat-3"
+        >
+          <p><i class="fas fa-chevron-down"></i></p>
+          <p><i class="fas fa-chevron-down"></i></p>
+        </div>
+      </main>
+    </header>
+
+    <main>
+      <section class="about-background">
+        <div class="section-container" id="about-me">
+          <h2 class="section-title">Acerca de mi</h2>
+          <div class="about-profile-container">
+            <div class="about__portrait">
+              <img src="./assets/images/me.jpg" alt="Patricia Prince" />
+            </div>
+            <div class="about__description">
+              <p>
+                Hola, soy Patricia Prince,
+                <span
+                  >diseñadora UX, periodista y especialista en comunicación
+                  organizacional.</span
+                >Vivo en Santiago de Chile. En este sitio encotrarás una muestra
+                de mi trabajo, mi experiencia profesional y mis intereses.
+              </p>
+
+              <p>
+                Me he dedicado a las comunicaciones corporativas internas y
+                externas, tambien a la comunicacion 2.0 y al marketing digital.
+                Me encanta el trabajo en equipo y el diseño en general.
+              </p>
+
+              <p>
+                Estoy siempre en busca de proyectos innovadores. ¡Te invito a
+                contactarme!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="comunication" class="comunication-background">
+        <div class="section-container">
+          <h2 class="section-title">Comunicaciones</h2>
+
+          <div class="container">
+            <div class="gallery">
+              <div class="gallery-item" tabindex="0">
+                <img
+                  src="https://images.unsplash.com/photo-1523726491678-bf852e717f6a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&?w=500&h=500&fit=crop"
+                  class="gallery-image"
+                  alt=""
+                />
+              </div>
+
+              <div class="gallery-item" tabindex="0">
+                <img
+                  src="https://images.unsplash.com/photo-1578401058525-35aaec0b4658?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80"
+                  class="gallery-image"
+                  alt=""
+                />
+              </div>
+
+              <div class="gallery-item" tabindex="0">
+                <img
+                  src="https://images.unsplash.com/photo-1545235617-7a424c1a60cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80"
+                  class="gallery-image"
+                  alt=""
+                />
+              </div>
+
+              <div class="gallery-item" tabindex="0">
+                <img
+                  src="https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80"
+                  class="gallery-image"
+                  alt=""
+                />
+              </div>
+
+              <div class="gallery-item" tabindex="0">
+                <img
+                  src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80"
+                  class="gallery-image"
+                  alt=""
+                />
+              </div>
+
+              <div class="gallery-item" tabindex="0">
+                <img
+                  src="https://cdn.dribbble.com/users/34556/screenshots/5454130/stile_v2_dribbble_1_2x.jpg"
+                  class="gallery-image"
+                  alt=""
+                />
+              </div>
+              <div class="gallery-item" tabindex="0">
+                <img
+                  src="https://cdn.dribbble.com/users/34556/screenshots/5454130/stile_v2_dribbble_1_2x.jpg"
+                  class="gallery-image"
+                  alt=""
+                />
+              </div>
+              <div class="gallery-item" tabindex="0">
+                <img
+                  src="https://images.unsplash.com/photo-1523726491678-bf852e717f6a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&?w=500&h=500&fit=crop"
+                  class="gallery-image"
+                  alt=""
+                />
+              </div>
+
+              <div class="gallery-item" tabindex="0">
+                <img
+                  src="https://images.unsplash.com/photo-1578401058525-35aaec0b4658?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80"
+                  class="gallery-image"
+                  alt=""
+                />
+              </div>
+
+              <div class="gallery-item" tabindex="0">
+                <img
+                  src="https://images.unsplash.com/photo-1545235617-7a424c1a60cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80"
+                  class="gallery-image"
+                  alt=""
+                />
+              </div>
+            </div>
+            <!-- End of gallery -->
+          </div>
+        </div>
+      </section>
+    </main>
+    <script>
+      const overlayLayer = document.querySelector(".overlay");
+      const navLayer = document.querySelector(".nav");
+
+      function handleToggleMenu() {
+        navLayer.classList.toggle("nav-open");
+        overlayLayer.classList.toggle("overlay-active");
+        console.log("w");
+      }
+    </script>
+  </body>
 </html>
