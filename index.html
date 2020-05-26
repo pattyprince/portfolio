@@ -42,7 +42,8 @@
         <div class="nav__menu-list">
           <ul>
             <li><a href="#">HOME</a></li>
-            <li><a href="#">UX/UI</a></li>
+            <li><a href="#about-me">ABOUT ME</a></li>
+            <li><a href="#uxui">UX/UI</a></li>
             <li><a href="#">COMUNICACIONES</a></li>
             <li><a href="#">VISUAL</a></li>
             <li><a href="#">CONTACTO</a></li>
@@ -78,16 +79,15 @@
         <div class="section-container" id="about-me">
           <h2 class="section-title">Acerca de mi</h2>
           <div class="about-profile-container">
-            <div class="about__portrait">
-              <img src="./assets/images/me.jpg" alt="Patricia Prince" />
-            </div>
+            <div class="about__portrait"></div>
             <div class="about__description">
               <p>
                 Hola, soy Patricia Prince,
                 <span
                   >diseñadora UX, periodista y especialista en comunicación
                   organizacional.</span
-                >Vivo en Santiago de Chile. En este sitio encotrarás una muestra
+                >
+                Vivo en Santiago de Chile. En este sitio encotrarás una muestra
                 de mi trabajo, mi experiencia profesional y mis intereses.
               </p>
 
@@ -106,92 +106,113 @@
         </div>
       </section>
 
-      <section id="comunication" class="comunication-background">
+      <section id="uxui" class="uxui-background">
         <div class="section-container">
-          <h2 class="section-title">Comunicaciones</h2>
-
-          <div class="container">
-            <div class="gallery">
-              <div class="gallery-item" tabindex="0">
-                <img
-                  src="https://images.unsplash.com/photo-1523726491678-bf852e717f6a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&?w=500&h=500&fit=crop"
-                  class="gallery-image"
-                  alt=""
-                />
-              </div>
-
-              <div class="gallery-item" tabindex="0">
-                <img
-                  src="https://images.unsplash.com/photo-1578401058525-35aaec0b4658?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80"
-                  class="gallery-image"
-                  alt=""
-                />
-              </div>
-
-              <div class="gallery-item" tabindex="0">
-                <img
-                  src="https://images.unsplash.com/photo-1545235617-7a424c1a60cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80"
-                  class="gallery-image"
-                  alt=""
-                />
-              </div>
-
-              <div class="gallery-item" tabindex="0">
-                <img
-                  src="https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80"
-                  class="gallery-image"
-                  alt=""
-                />
-              </div>
-
-              <div class="gallery-item" tabindex="0">
-                <img
-                  src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80"
-                  class="gallery-image"
-                  alt=""
-                />
-              </div>
-
-              <div class="gallery-item" tabindex="0">
-                <img
-                  src="https://cdn.dribbble.com/users/34556/screenshots/5454130/stile_v2_dribbble_1_2x.jpg"
-                  class="gallery-image"
-                  alt=""
-                />
-              </div>
-              <div class="gallery-item" tabindex="0">
-                <img
-                  src="https://cdn.dribbble.com/users/34556/screenshots/5454130/stile_v2_dribbble_1_2x.jpg"
-                  class="gallery-image"
-                  alt=""
-                />
-              </div>
-              <div class="gallery-item" tabindex="0">
-                <img
-                  src="https://images.unsplash.com/photo-1523726491678-bf852e717f6a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&?w=500&h=500&fit=crop"
-                  class="gallery-image"
-                  alt=""
-                />
-              </div>
-
-              <div class="gallery-item" tabindex="0">
-                <img
-                  src="https://images.unsplash.com/photo-1578401058525-35aaec0b4658?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80"
-                  class="gallery-image"
-                  alt=""
-                />
-              </div>
-
-              <div class="gallery-item" tabindex="0">
-                <img
-                  src="https://images.unsplash.com/photo-1545235617-7a424c1a60cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80"
-                  class="gallery-image"
-                  alt=""
-                />
-              </div>
-            </div>
-            <!-- End of gallery -->
+          <h2 class="section-title">UX / UI</h2>
+          <div class="uxui-filter">
+            <ul>
+              <li>
+                <a class="" href="#" data-filter=".all">Todos</a><sup>6</sup>
+              </li>
+              <li data-slug="ux">
+                <a class="" href="#" data-filter="">UX</a><sup>3</sup>
+              </li>
+              <li data-slug="ui">
+                <a class="" href="#" data-filter="">UI</a><sup>3</sup>
+              </li>
+            </ul>
           </div>
+
+          <div class="uxui-gallery">
+            <div class="uxui-gallery-item" tabindex="0">
+              <img
+                src="https://images.unsplash.com/photo-1523726491678-bf852e717f6a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&?w=500&h=500&fit=crop"
+                class="gallery-image"
+                alt=""
+              />
+              <p>Lorem, ipsum.</p>
+            </div>
+
+            <div class="uxui-gallery-item" tabindex="0">
+              <img
+                src="https://images.unsplash.com/photo-1578401058525-35aaec0b4658?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80"
+                class="gallery-image"
+                alt=""
+              />
+              <p>Lorem, ipsum.</p>
+            </div>
+
+            <div class="uxui-gallery-item" tabindex="0">
+              <img
+                src="https://images.unsplash.com/photo-1545235617-7a424c1a60cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80"
+                class="gallery-image"
+                alt=""
+              />
+              <p>Lorem, ipsum.</p>
+            </div>
+
+            <div class="uxui-gallery-item" tabindex="0">
+              <img
+                src="https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80"
+                class="gallery-image"
+                alt=""
+              />
+              <p>Lorem, ipsum.</p>
+            </div>
+
+            <div class="uxui-gallery-item" tabindex="0">
+              <img
+                src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80"
+                class="gallery-image"
+                alt=""
+              />
+              <p>Lorem, ipsum.</p>
+            </div>
+
+            <div class="uxui-gallery-item" tabindex="0">
+              <img
+                src="https://cdn.dribbble.com/users/34556/screenshots/5454130/stile_v2_dribbble_1_2x.jpg"
+                class="gallery-image"
+                alt=""
+              />
+              <p>Lorem, ipsum.</p>
+            </div>
+            <div class="uxui-gallery-item" tabindex="0">
+              <img
+                src="https://cdn.dribbble.com/users/34556/screenshots/5454130/stile_v2_dribbble_1_2x.jpg"
+                class="gallery-image"
+                alt=""
+              />
+              <p>Lorem, ipsum.</p>
+            </div>
+            <div class="uxui-gallery-item" tabindex="0">
+              <img
+                src="https://images.unsplash.com/photo-1523726491678-bf852e717f6a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&?w=500&h=500&fit=crop"
+                class="gallery-image"
+                alt=""
+              />
+              <p>Lorem, ipsum.</p>
+            </div>
+
+            <div class="uxui-gallery-item" tabindex="0">
+              <img
+                src="https://images.unsplash.com/photo-1578401058525-35aaec0b4658?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80"
+                class="gallery-image"
+                alt=""
+              />
+              <p>Lorem, ipsum.</p>
+            </div>
+
+            <div class="uxui-gallery-item" tabindex="0">
+              <img
+                src="https://images.unsplash.com/photo-1545235617-7a424c1a60cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80"
+                class="gallery-image"
+                alt=""
+              />
+              <p>Lorem, ipsum.</p>
+            </div>
+          </div>
+          <!-- End of gallery -->
         </div>
       </section>
     </main>
