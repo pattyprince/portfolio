@@ -125,16 +125,18 @@ header .fa-times {
 
 .nav__menu-list a {
   width: 100%;
+  position: relative;
 }
 
 .nav__menu-list a::after {
   content: "";
-  width: 0%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 1.2rem;
   background-color: var(--clr-black);
-  height: 2px;
-  display: block;
+  height: 0.2rem;
   transition: 0.3s;
-  margin: 0 0;
 }
 
 .nav__menu-list a:hover::after {
@@ -197,6 +199,9 @@ header .fa-times {
 }
 .chevron__container i {
   font-size: 2rem;
+}
+.chevron__container p:last-child {
+  margin-top: -1.3rem;
 }
 
 .main__content {
