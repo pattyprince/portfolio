@@ -233,6 +233,10 @@
     <script>
       const overlayLayer = document.querySelector(".overlay");
       const navLayer = document.querySelector(".nav");
+      const menuList = document.querySelectorAll(".nav__menu-list a");
+      menuList.forEach((item) => {
+        item.addEventListener("click", handleToggleMenu);
+      });
 
       function handleToggleMenu() {
         navLayer.classList.toggle("nav-open");
