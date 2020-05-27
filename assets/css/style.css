@@ -37,6 +37,7 @@ i {
 }
 
 .logo {
+  display: none;
   position: fixed;
   left: 2rem;
   top: 2rem;
@@ -76,7 +77,6 @@ header .fa-times {
   opacity: 0;
   width: 0;
   transition: opacity 0.5s;
-
   position: fixed;
 }
 
@@ -193,10 +193,124 @@ header .fa-times {
 
 .main__hero-left h1 {
   font-size: 5rem;
+  line-height: 5rem;
   color: var(--clr-white);
-  text-shadow: 0px 3px 10px var(--clr-black);
+  text-shadow: 0px 2px 2px var(--clr-black);
 }
 
+/* css profesion inicia */
+
+.ms-header__title {
+  -webkit-box-flex: 1;
+  flex: 1 1 100%;
+  width: 100%;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--clr-black);
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
+}
+
+.ms-slider {
+  display: inline-block;
+  height: 3.3rem;
+  overflow: hidden;
+  vertical-align: middle;
+  -webkit-mask-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(transparent),
+    color-stop(white),
+    color-stop(white),
+    color-stop(white),
+    to(transparent)
+  );
+  -webkit-mask-image: linear-gradient(
+    transparent,
+    white,
+    white,
+    white,
+    transparent
+  );
+  mask-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(transparent),
+    color-stop(white),
+    color-stop(white),
+    color-stop(white),
+    to(transparent)
+  );
+  mask-image: linear-gradient(transparent, white, white, white, transparent);
+  mask-type: luminance;
+  mask-mode: alpha;
+}
+.ms-slider__words {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  -webkit-animation-name: wordSlider;
+  animation-name: wordSlider;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-duration: 7s;
+  animation-duration: 7s;
+}
+.ms-slider__word {
+  display: block;
+  line-height: 1.3em;
+  text-align: center;
+}
+
+@-webkit-keyframes wordSlider {
+  0%,
+  27% {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+  33%,
+  60% {
+    -webkit-transform: translateY(-25%);
+    transform: translateY(-25%);
+  }
+  66%,
+  93% {
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  100% {
+    -webkit-transform: translateY(-75%);
+    transform: translateY(-75%);
+  }
+}
+
+@keyframes wordSlider {
+  0%,
+  27% {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+  33%,
+  60% {
+    -webkit-transform: translateY(-25%);
+    transform: translateY(-25%);
+  }
+  66%,
+  93% {
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  100% {
+    -webkit-transform: translateY(-75%);
+    transform: translateY(-75%);
+  }
+}
+/* css profesion termina */
 .main__hero-left p {
   font-size: 3rem;
   color: var(--clr-black);
@@ -237,11 +351,11 @@ header .fa-times {
 
 .about-profile-container {
   display: grid;
-  grid-template-columns: 0.6fr 1fr;
+  grid-template-columns: 1fr 0.6fr;
   justify-content: center;
   align-items: center;
   background-color: #fff;
-  box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.19);
 }
 
 .about__portrait {
@@ -250,6 +364,11 @@ header .fa-times {
   background-size: cover;
   background-position: center;
   height: 100%;
+  order: 2;
+}
+
+.about__description {
+  order: 1;
 }
 
 .about__description p {
@@ -310,11 +429,27 @@ header .fa-times {
 }
 
 @media screen and (max-width: 880px) {
+  .section-container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 85%;
+  }
   .about-profile-container {
     grid-template-columns: 1fr;
   }
   .about__portrait {
     height: 200px;
     background-position: top;
+    order: 1;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .nav {
+    transform: translateX(100%);
+    width: 100%;
+  }
+  .nav-open {
+    transform: translateX(0%);
   }
 }

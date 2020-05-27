@@ -41,11 +41,10 @@
 
         <div class="nav__menu-list">
           <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#about-me">ABOUT ME</a></li>
+            <li><a href="#">INICIO</a></li>
+            <li><a href="#about-me">ACERCA DE MI</a></li>
             <li><a href="#uxui">UX/UI</a></li>
             <li><a href="#">COMUNICACIONES</a></li>
-            <li><a href="#">VISUAL</a></li>
             <li><a href="#">CONTACTO</a></li>
           </ul>
           <div class="nav__social">
@@ -61,7 +60,18 @@
         <div class="main__hero">
           <div class="main__hero-left">
             <h1>Patricia Prince</h1>
-            <p>UX/UI Designer</p>
+
+            <h3 class="ms-header__title">
+              <div class="ms-slider">
+                <ul class="ms-slider__words">
+                  <li class="ms-slider__word">Diseñadora UX/UI</li>
+                  <li class="ms-slider__word">Comunicación Corporativa</li>
+                  <li class="ms-slider__word">Periodista</li>
+                  <!-- This last word needs to duplicate the first one to ensure a smooth infinite animation -->
+                  <li class="ms-slider__word">Diseñadora UX/UI</li>
+                </ul>
+              </div>
+            </h3>
           </div>
           <div class="main__hero-right"></div>
         </div>
@@ -234,6 +244,7 @@
       const overlayLayer = document.querySelector(".overlay");
       const navLayer = document.querySelector(".nav");
       const menuList = document.querySelectorAll(".nav__menu-list a");
+
       menuList.forEach((item) => {
         item.addEventListener("click", handleToggleMenu);
       });
@@ -241,7 +252,23 @@
       function handleToggleMenu() {
         navLayer.classList.toggle("nav-open");
         overlayLayer.classList.toggle("overlay-active");
-        console.log("w");
+      }
+    </script>
+    <script>
+      // When the user scrolls down 50px from the top of the document, resize the header's font size
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 450 ||
+          document.documentElement.scrollTop > 450
+        ) {
+          document.querySelector(".logo").style.display = "block";
+        } else {
+          document.querySelector(".logo").style.display = "none";
+        }
       }
     </script>
   </body>
