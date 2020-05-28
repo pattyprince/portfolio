@@ -45,7 +45,7 @@
             <li><a href="#about-me">ACERCA DE MI</a></li>
             <li><a href="#uxui">UX/UI</a></li>
             <li><a href="#">COMUNICACIONES</a></li>
-            <li><a href="#">CONTACTO</a></li>
+            <li><a href="#contact">CONTACTO</a></li>
           </ul>
           <div class="nav__social">
             <p><i class="fab fa-twitter"></i></p>
@@ -174,6 +174,64 @@
             </div>
           </div>
           <!-- End of gallery -->
+        </div>
+      </section>
+
+      <section id="contact" class="contact-background">
+        <div class="section-container">
+          <h2 class="section-title">Contacto</h2>
+          <div class="contact-container">
+            <div class="contact-container-left">
+              <div class="left-description">
+                <h3>
+                  Let's Chat
+                </h3>
+                <p>
+                  Whether you have a question, want to start a project or simply
+                  want to connect.
+                </p>
+                <p>Feel free to send me a message in the contact form</p>
+              </div>
+              <div class="left-contact-data">
+                <ul>
+                  <li><p>email</p></li>
+                  <li>pattyprince@gmail.com</li>
+                  <li><p>Sigueme</p></li>
+                  <li>
+                    <div class="nav__social">
+                      <p><i class="fab fa-twitter"></i></p>
+                      <p><i class="fab fa-linkedin"></i></p>
+                      <p><i class="fab fa-instagram"></i></p>
+                      <p><i class="fab fa-github"></i></p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="contact-container-right">
+              <form
+                action="https://formspree.io/xrgypqnp"
+                method="POST"
+                class="contact-form"
+              >
+                <label>
+                  <input type="text" name="nombre" placeholder="Nombre" />
+                </label>
+                <label>
+                  <input type="email" name="email" placeholder="email" />
+                </label>
+                <label>
+                  <textarea name="mensaje" placeholder="Mensaje"></textarea>
+                </label>
+
+                <!-- your other form fields go here -->
+
+                <button type="submit" class="btn-submit">
+                  <i class="far fa-paper-plane"></i>Enviar
+                </button>
+              </form>
+            </div>
+          </div>
         </div>
       </section>
     </main>

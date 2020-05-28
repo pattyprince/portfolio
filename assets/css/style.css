@@ -388,9 +388,6 @@ header .fa-times {
   margin: 0 auto;
 }
 
-.grid-item {
-}
-
 .filters {
   width: 100%;
   text-align: center;
@@ -443,6 +440,63 @@ header .fa-times {
   margin: 10px;
 }
 
+/* contact me section  */
+
+.contact-container {
+  display: flex;
+  justify-content: stretch;
+}
+
+.contact-container-left {
+  background: palevioletred;
+  width: 55%;
+  padding: 3rem;
+  border-radius: 1rem 0 0 1rem;
+}
+
+.left-contact-data ul {
+  list-style: none;
+}
+.contact-container-right {
+  background: mediumpurple;
+  width: 45%;
+  padding: 3rem 0;
+  border-radius: 0 1rem 1rem 0;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.contact-form input {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  height: 40px;
+  margin-bottom: 1rem;
+  letter-spacing: 0.2rem;
+  padding: 1rem;
+}
+
+.contact-form textarea {
+  background-color: rgba(255, 255, 255, 0.5);
+  resize: none;
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 2rem;
+
+  height: 150px;
+  letter-spacing: 0.2rem;
+}
+
+.btn-submit {
+  border: none;
+  padding: 1rem;
+}
+
 @media screen and (max-width: 880px) {
   .section-container {
     padding-top: 30px;
@@ -456,6 +510,25 @@ header .fa-times {
     height: 200px;
     background-position: top;
     order: 1;
+  }
+  .contact-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-container-left {
+    background: palevioletred;
+    width: 80%;
+
+    border-radius: 1rem 1rem 0 0;
+  }
+
+  .contact-container-right {
+    background: mediumpurple;
+    width: 80%;
+
+    border-radius: 0 0 1rem 1rem;
   }
 }
 
