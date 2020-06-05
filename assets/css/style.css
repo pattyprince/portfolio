@@ -6,6 +6,7 @@
   --clr-gray: #ccc;
   --clr-dark-gray: #666;
   --clr-overlay: rgba(0, 0, 0, 0.8);
+  --clr-alt: #c168b0;
 }
 
 *,
@@ -443,6 +444,27 @@ header .fa-times {
   margin: 10px;
 }
 
+/* skills secton  */
+.skills-container ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skills-container i {
+  font-size: 10rem;
+  margin: 3rem;
+  color: var(--clr-black);
+  transition: transform 0.5s;
+}
+
+.skills-container i:hover {
+  transform: scale(1.1);
+  color: var(--clr-secondary);
+  transition: transform 0.2s;
+}
+
 /* contact me section  */
 
 .contact-container {
@@ -455,10 +477,18 @@ header .fa-times {
   width: 55%;
   padding: 3rem;
   border-radius: 1rem 0 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .left-contact-data ul {
   list-style: none;
+}
+
+.left-description h3 {
+  color: var(--clr-black);
+  font-size: 2rem;
 }
 .contact-container-right {
   /* background: mediumpurple; */
@@ -525,7 +555,7 @@ header .fa-times {
   bottom: 0;
   background: linear-gradient(to right, #c168b0, #a1fff2, #c168b0);
   height: 0.2rem;
-  width: 50%;
+  width: 0%;
   transition: all 0.5s;
 }
 
@@ -535,7 +565,8 @@ header .fa-times {
 
 .btn-submit {
   border: none;
-  padding: 1rem;
+  padding: 2rem;
+  background: var(--clr-alt);
 }
 
 @media screen and (max-width: 880px) {
