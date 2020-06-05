@@ -214,15 +214,35 @@
                 method="POST"
                 class="contact-form"
               >
-                <label>
-                  <input type="text" name="nombre" placeholder="Nombre" />
-                </label>
-                <label>
-                  <input type="email" name="email" placeholder="email" />
-                </label>
-                <label>
-                  <textarea name="mensaje" placeholder="Mensaje"></textarea>
-                </label>
+                <div class="form-row">
+                  <input
+                    class="input"
+                    type="text"
+                    name="nombre"
+                    required
+                  /><span class="form-line"></span>
+                  <label for="nombre">Nombre</label>
+                </div>
+
+                <div class="form-row">
+                  <input class="input" type="text" name="email" required /><span
+                    class="form-line"
+                  ></span>
+                  <label for="email">Email</label>
+                </div>
+
+                <div class="form-row">
+                  <textarea
+                    class="input textarea"
+                    name="mensaje"
+                    id=""
+                    cols="30"
+                    rows="10"
+                    required
+                  ></textarea>
+                  <span class="form-line"></span>
+                  <label for="nombre">Mensaje</label>
+                </div>
 
                 <!-- your other form fields go here -->
 

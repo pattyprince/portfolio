@@ -4,10 +4,13 @@
   --clr-white: rgb(236, 235, 235);
   --clr-black: #333;
   --clr-gray: #ccc;
-  --clr-dark-gray: #444;
+  --clr-dark-gray: #666;
   --clr-overlay: rgba(0, 0, 0, 0.8);
 }
-* {
+
+*,
+::before,
+::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -448,7 +451,7 @@ header .fa-times {
 }
 
 .contact-container-left {
-  background: palevioletred;
+  background: #c168b0;
   width: 55%;
   padding: 3rem;
   border-radius: 1rem 0 0 1rem;
@@ -458,10 +461,11 @@ header .fa-times {
   list-style: none;
 }
 .contact-container-right {
-  background: mediumpurple;
+  /* background: mediumpurple; */
   width: 45%;
   padding: 3rem 0;
   border-radius: 0 1rem 1rem 0;
+  border: 1px solid #c168b0;
 }
 
 .contact-form {
@@ -471,25 +475,62 @@ header .fa-times {
   margin: 0 auto;
 }
 
-.contact-form input {
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.5);
-  border: none;
-  height: 40px;
-  margin-bottom: 1rem;
-  letter-spacing: 0.2rem;
-  padding: 1rem;
+.form-row {
+  position: relative;
+  margin-bottom: 3rem;
+}
+.contact-form label {
+  position: absolute;
+  left: 0;
+  bottom: 0.6rem;
+  color: var(--clr-dark-gray);
+  font-size: 1.8rem;
+  pointer-events: none;
+  transition: all 0.5s;
 }
 
-.contact-form textarea {
-  background-color: rgba(255, 255, 255, 0.5);
-  resize: none;
-  width: 100%;
-  padding: 1rem;
-  margin-bottom: 2rem;
+.contact-form .input:focus ~ label,
+.contact-form .input:valid ~ label {
+  font-size: 1rem;
+  top: 0;
+  color: var(--clr-secondary);
+}
 
-  height: 150px;
+.contact-form .input {
+  color: var(--clr-dark-gray);
+  width: 100%;
+  /* background-color: rgba(255, 255, 255, 0.5); */
+  border: none;
+  border-bottom: 1px solid var(--clr-gray);
+  height: 40px;
   letter-spacing: 0.2rem;
+  padding: 1rem;
+  position: relative;
+}
+
+.contact-form .textarea {
+  resize: none;
+  height: 10rem;
+}
+
+.contact-form .input:focus {
+  outline: none;
+  color: var(--clr-black);
+}
+
+.form-line:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(to right, #c168b0, #a1fff2, #c168b0);
+  height: 0.2rem;
+  width: 50%;
+  transition: all 0.5s;
+}
+
+.contact-form .input:focus ~ .form-line:after {
+  width: 100%;
 }
 
 .btn-submit {
@@ -518,14 +559,12 @@ header .fa-times {
   }
 
   .contact-container-left {
-    background: palevioletred;
     width: 80%;
 
     border-radius: 1rem 1rem 0 0;
   }
 
   .contact-container-right {
-    background: mediumpurple;
     width: 80%;
 
     border-radius: 0 0 1rem 1rem;
