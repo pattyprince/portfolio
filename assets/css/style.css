@@ -465,6 +465,32 @@ header .fa-times {
   transition: transform 0.2s;
 }
 
+/* comunication section  */
+
+.comunication-a {
+  display: flex;
+}
+.comunication-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.comunication-desc {
+  width: 60%;
+}
+
+.comunication-image {
+  width: 40%;
+
+  border: solid red 1px;
+}
+
+.comunication-image img {
+  max-width: 250px;
+  width: 100%;
+  height: auto;
+  border: solid red 1px;
+}
+
 /* contact me section  */
 
 .contact-container {
@@ -567,6 +593,8 @@ header .fa-times {
   border: none;
   padding: 2rem;
   background: var(--clr-alt);
+  color: var(--clr-white);
+  font-size: 1.5rem;
 }
 
 @media screen and (max-width: 880px) {
