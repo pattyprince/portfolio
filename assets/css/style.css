@@ -363,8 +363,7 @@ header .fa-times {
 }
 
 .about__portrait {
-  background: url("https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
-    no-repeat;
+  background: url("../images/avataaars.svg") no-repeat;
   background-size: cover;
   background-position: center;
   height: 100%;
@@ -610,6 +609,7 @@ header .fa-times {
     height: 200px;
     background-position: top;
     order: 1;
+    background-size: contain;
   }
   .contact-container {
     flex-direction: column;
