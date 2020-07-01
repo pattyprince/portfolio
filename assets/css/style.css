@@ -136,11 +136,9 @@ header .fa-times {
 }
 
 .nav__menu-list a {
-  width: 100%;
-  position: relative;
 }
 
-.nav__menu-list a::after {
+.nav__menu-ul a::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -153,6 +151,11 @@ header .fa-times {
 
 .nav__menu-list a:hover::after {
   width: 100%;
+}
+
+.nav__menu-ul a {
+  width: 100%;
+  position: relative;
 }
 
 .nav__social {
@@ -468,6 +471,15 @@ header .fa-times {
 }
 
 /* skills secton  */
+.skills-background {
+  background-color: #fcf1fd;
+}
+
+.skills-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
 .skills-container ul {
   list-style: none;
   display: flex;
@@ -484,7 +496,7 @@ header .fa-times {
 
 .skills-container i:hover {
   transform: scale(1.1);
-  color: var(--clr-secondary);
+  color: #870095;
   transition: transform 0.2s;
 }
 
