@@ -1,15 +1,16 @@
 :root {
-  --clr-primary: #fff;
+  --clr-primary: #870095;
   --clr-secondary: rgb(50, 153, 160);
   --clr-blue: #3f5efb;
   --clr-blue-light: #8196ff;
-  --clr-white: rgb(236, 235, 235);
+  --clr-white: #ecebeb;
   --clr-beige: #fffef6;
   --clr-black: #333;
   --clr-gray: #ccc;
   --clr-dark-gray: #666;
   --clr-overlay: rgba(0, 0, 0, 0.8);
   --clr-alt: #fc466b;
+  --clr-lila: #fcf1fd;
   --font1: "Arimo", sans-serif;
   --font2: "Fira Sans", sans-serif;
 }
@@ -144,7 +145,7 @@ header .fa-times {
   bottom: 0;
   left: 0;
   width: 1.2rem;
-  background-color: #870095;
+  background-color: var(--clr-primary);
   height: 0.2rem;
   transition: 0.3s;
 }
@@ -167,6 +168,11 @@ header .fa-times {
 .nav__social i {
   font-size: 2.5rem;
   color: var(--clr-black);
+}
+
+.nav__social i:hover {
+  font-size: 2.5rem;
+  color: var(--clr-primary);
 }
 
 .main {
@@ -237,36 +243,6 @@ header .fa-times {
   height: 3.3rem;
   overflow: hidden;
   vertical-align: middle;
-  /* -webkit-mask-image: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(transparent),
-    color-stop(white),
-    color-stop(white),
-    color-stop(white),
-    to(transparent)
-  );
-  -webkit-mask-image: linear-gradient(
-    transparent,
-    white,
-    white,
-    white,
-    transparent
-  );
-  mask-image: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(transparent),
-    color-stop(white),
-    color-stop(white),
-    color-stop(white),
-    to(transparent)
-  );
-  mask-image: linear-gradient(transparent, white, white, white, transparent);
-  mask-type: luminance;
-  mask-mode: alpha; */
 }
 .ms-slider__words {
   display: inline-block;
@@ -368,7 +344,7 @@ header .fa-times {
 }
 
 .section-title {
-  color: #870095;
+  color: var(--clr-primary);
   font-family: var(--font1);
   font-size: 3rem;
   margin-bottom: 3rem;
@@ -403,7 +379,7 @@ header .fa-times {
 }
 
 .about__description p span {
-  color: #870095;
+  color: var(--clr-primary);
 }
 
 /* projects section */
@@ -472,7 +448,7 @@ header .fa-times {
 
 /* skills secton  */
 .skills-background {
-  background-color: #fcf1fd;
+  background-color: var(--clr-lila);
 }
 
 .skills-container {
@@ -496,7 +472,7 @@ header .fa-times {
 
 .skills-container i:hover {
   transform: scale(1.1);
-  color: #870095;
+  color: var(--clr-primary);
   transition: transform 0.2s;
 }
 
@@ -508,26 +484,31 @@ header .fa-times {
 
 .comunication-a {
   display: flex;
+  
+  justify-content: space-between;
+  align-items: center;
 }
 .comunication-reverse {
   display: flex;
   flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
 }
 .comunication-desc {
-  width: 60%;
+  width: 70%;
+  line-height: 1.5;
+  font-family: var(--font2);
+  font-size: 1.7rem;
+  padding: 2rem;
 }
 
 .comunication-image {
-  width: 40%;
-
-  border: solid red 1px;
+  width: 30%;
+  padding: 1.5rem;
 }
 
 .comunication-image img {
-  max-width: 250px;
   width: 100%;
-  height: auto;
-  border: solid red 1px;
 }
 
 /* contact me section  */
@@ -538,30 +519,43 @@ header .fa-times {
 }
 
 .contact-container-left {
-  background: #fcf1fd;
+  background: var(--clr-lila);
   width: 55%;
   padding: 3rem;
   border-radius: 1rem 0 0 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 1px solid #870095;
+  border: 1px solid var(--clr-primary);
+  line-height: 1.5;
+  font-family: var(--font2);
+  font-size: 1.7rem;
+  padding: 6rem;
 }
 
 .left-contact-data ul {
   list-style: none;
+  line-height: 1.5;
+  font-family: var(--font2);
+  font-size: 1.5rem;
+  padding: 2rem;
+  text-align: center;
 }
 
 .left-description h3 {
   color: var(--clr-dark-gray);
-  font-size: 2rem;
+  font-size: 4rem;
 }
+
+.left__title {
+  font-family: var(--font2);
+}
+
 .contact-container-right {
-  /* background: mediumpurple; */
   width: 45%;
   padding: 3rem 0;
   border-radius: 0 1rem 1rem 0;
-  border: 1px solid #870095;
+  border: 1px solid var(--clr-primary);
 }
 
 .contact-form {
@@ -606,7 +600,7 @@ header .fa-times {
 
 .contact-form .textarea {
   resize: none;
-  height: 10rem;
+  height: 5rem;
 }
 
 .contact-form .input:focus {
@@ -619,7 +613,6 @@ header .fa-times {
   position: absolute;
   left: 0;
   bottom: 0;
-  /* background: linear-gradient(to right, #c168b0, #a1fff2, #c168b0); */
   height: 0.2rem;
   width: 0%;
   transition: all 0.5s;
@@ -632,8 +625,17 @@ header .fa-times {
 .btn-submit {
   border: none;
   padding: 2rem;
-  background: #870095;
+  background: var(--clr-primary);
   color: var(--clr-white);
+  font-size: 1.5rem;
+}
+
+.btn-submit:hover {
+  padding: 2rem;
+  border: solid 1px var(--clr-primary);
+  margin: -1px;
+  background: var(--clr-lila);
+  color: var(--clr-black);
   font-size: 1.5rem;
 }
 
