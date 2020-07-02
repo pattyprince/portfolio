@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;1,300&family=Merriweather:ital,wght@1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>| Patty Prince - Portafolio |</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <p>Patricia Prince</p>
+      </div>
+      <div class="menu-toggle">
+        <i class="fas fa-bars" onclick="{handleToggleMenu()}"></i>
+      </div>
+      <div class="overlay" onclick="{handleToggleMenu()}"></div>
+
+      <nav class="nav">
+        <i class="fas fa-times" onclick="{handleToggleMenu()}"></i>
+
+        <div class="nav__menu-list">
+          <ul class="nav__menu-ul">
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="#about-me">Acerca de mí</a></li>
+            <li><a href="#uxui">UX/UI</a></li>
+            <li><a href="#skills">Habilidades Técnicas</a></li>
+            <li><a href="#comunication">Comunicaciones</a></li>
+            <li><a href="#contact">Contacto</a></li>
+            <li><a href="#contact">Descarga mi CV</a></li>
+          </ul>
+          <div class="nav__social">
+            <p>
+              <a href="https://www.linkedin.com/in/pattyprince/"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </p>
+            <p>
+              <a href="https://www.instagram.com/pattyprince/"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </p>
+            <p>
+              <a href="https://github.com/pattyprince"
+                ><i class="fab fa-github"></i
+              ></a>
+            </p>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="main-caso-1">
+      <section>
+        <div class="main__hero-caso-1">
+          <div class="main__hero-left-caso-1">
+            <h1>
+              Mapa de empatía <br />
+              y arquetipo
+            </h1>
+            <p>
+              Un aspecto importante del diseño de experiencia de usuarios tiene
+              que ver con la idea de enfocar todos los esfuerzos en ofrecer un
+              momento positivo y recordable al usar un producto o servicio.
+            </p>
+            <p>
+              Para lograr nuestro objetivo, debemos partir de la idea de un
+              cliente modelo creado con un Mapa de Empatía y un arquetipo.
+            </p>
+          </div>
+        </div>
+        <div
+          class="chevron__container-caso-1 animate__animated animate__shakeY animate__repeat-3"
+        >
+          <p><i class="fas fa-chevron-down"></i></p>
+          <p><i class="fas fa-chevron-down"></i></p>
+        </div>
+      </section>
+      <section>
+        <div class="ficha-caso">
+          <h4>Proyecto:</h4>
+          <p>
+            “Crear mediante el mapa de empatía, una persona coherente, creíble y
+            acorde al perfilamiento del documento de base”.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>footer</p>
+    </footer>
+    <script>
+      const overlayLayer = document.querySelector(".overlay");
+      const navLayer = document.querySelector(".nav");
+      const menuList = document.querySelectorAll(".nav__menu-list a");
+
+      menuList.forEach((item) => {
+        item.addEventListener("click", handleToggleMenu);
+      });
+
+      function handleToggleMenu() {
+        navLayer.classList.toggle("nav-open");
+        overlayLayer.classList.toggle("overlay-active");
+      }
+    </script>
+    <script>
+      // When the user scrolls down 50px from the top of the document, resize the header's font size
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 450 ||
+          document.documentElement.scrollTop > 450
+        ) {
+          document.querySelector(".logo").style.display = "block";
+        } else {
+          document.querySelector(".logo").style.display = "none";
+        }
+      }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".grid").isotope({
+          itemSelector: ".grid-item",
+          masonry: {
+            isFitWidth: true,
+            columnWidth: 100,
+          },
+        });
+
+        // filter items on button click
+        $(".filter-button-group").on("click", "li", function () {
+          var filterValue = $(this).attr("data-filter");
+          $(".grid").isotope({ filter: filterValue });
+          $(".filter-button-group li").removeClass("active");
+          $(this).addClass("active");
+        });
+      });
+    </script>
+  </body>
+</html>
