@@ -326,7 +326,7 @@ header .fa-times {
 
 .main__content {
   margin: 0 auto;
-  max-width: 1500px;
+  max-width: 1200px;
 }
 
 /* MAIN */
@@ -335,7 +335,7 @@ header .fa-times {
   padding-top: 80px;
   padding-bottom: 80px;
   width: 70%;
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -670,7 +670,14 @@ header .fa-times {
 
 /* Caso 1-CSS */
 
-.main-caso-1 {
+.main__caso {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header-caso-1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -679,34 +686,36 @@ header .fa-times {
   position: relative;
   /* background: url("../images/triangle.jpg") left center no-repeat; */
   background-size: cover;
-}
-
-.main-caso-1:before {
   content: "";
-  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgb(63, 94, 251);
-  background: linear-gradient(
-    228deg,
-    rgba(63, 94, 251, 1) 0%,
-    rgba(252, 70, 107, 0.5158438375350141) 95%
-  );
+  background: var(--clr-primary);
   opacity: 0.7;
   z-index: 1;
 }
 
-.main__hero-caso-1 {
+.header__caso-1 {
   height: 40vh;
+  width: 60%;
+  margin: auto;
   display: flex;
-  justify-content: left;
+  justify-content: center;
+  align-items: center;
   z-index: 2;
-  padding-left: 20rem;
+  padding-top: 10rem;
 }
 
-.main__hero-left-caso-1 h1 {
+.header__left-caso-1 {
+  flex-direction: column;
+}
+
+.header__left-caso-1 img {
+  width: 50%;
+}
+
+.header__left-caso-1 h1 {
   font-family: var(--font1);
   font-size: 5rem;
   line-height: 5rem;
@@ -714,12 +723,12 @@ header .fa-times {
   text-shadow: 0px 0px 1px var(--clr-black);
 }
 
-.main__hero-left-caso-1 p {
-  width: 40%;
-  font-size: 2rem;
+.header__left-caso-1 p {
+  width: 80%;
+  font-size: 1.7rem;
   font-weight: 300;
   font-family: var(--font2);
-  color: var(--clr-black);
+  color: var(--clr-beige);
   padding-top: 3rem;
 }
 
@@ -727,7 +736,7 @@ header .fa-times {
   text-align: center;
   animation-duration: 5s;
   z-index: 2;
-  margin-top: 16rem;
+  margin-bottom: 4rem;
 }
 .chevron__container-caso-1 i {
   font-size: 2rem;
@@ -737,12 +746,94 @@ header .fa-times {
   margin-top: -1.3rem;
 }
 
+.ficha-section {
+  width: 100vh;
+  margin: 0 auto;
+}
+
 .ficha-caso {
-  height: 50vh;
+  width: 100vh;
   display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-rows: auto;
-  border: solid 1px red;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  padding-top: 2rem;
+}
+
+.ficha-contenedor {
+  width: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.ficha-info {
+  width: 100vh;
+  display: flex;
+  justify-content: left;
+  align-items: stretch;
+}
+
+.ficha-titulo {
+  width: 15vh;
+  font-size: 1.7rem;
+  font-weight: 700;
+  font-family: var(--font2);
+  color: var(--clr-black);
+  padding: 1rem;
+}
+
+.ficha-titulo-2 {
+  width: 40vh;
+  font-size: 1.7rem;
+  font-weight: 700;
+  font-family: var(--font2);
+  color: var(--clr-black);
+  padding: 1rem;
+}
+
+.ficha-descrip {
+  font-size: 1.5rem;
+  font-weight: 300;
+  font-family: var(--font2);
+  color: var(--clr-black);
+  padding: 1rem;
+  padding-left: 2rem;
+  line-height: 1.5;
+}
+
+.ficha-descrip p {
+  padding: 1rem;
+  width: 80vh;
+  display: flex;
+  justify-content: left;
+  align-items: stretch;
+}
+
+/* Caso 1 CSS - section_2 */
+
+.section_2 {
+  height: 100vh;
+  width: 100vh;
+  margin: 10% auto;
+  background-color: var(--clr-lila);
+}
+
+.section_titulo h2 {
+  font-family: var(--font1);
+  font-size: 2rem;
+  /* line-height: 2rem; */
+  color: var(--clr-primary);
+  /* padding: 1rem; */
+}
+
+.section_3 {
+  height: 40vh;
+  width: 100vh;
+  margin: 10% auto;
+  background-color: var(--clr-lila);
 }
 
 @media screen and (max-width: 880px) {
