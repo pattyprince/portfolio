@@ -736,7 +736,7 @@ header .fa-times {
   text-align: center;
   animation-duration: 5s;
   z-index: 2;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 .chevron__container-caso-1 i {
   font-size: 2rem;
@@ -758,22 +758,21 @@ header .fa-times {
   grid-template-rows: 1fr;
   justify-content: center;
   align-items: center;
-  margin-top: 2rem;
-  padding-top: 2rem;
+  /* margin-top: 2rem;
+  padding-top: 2rem; */
 }
 
 .ficha-contenedor {
   width: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: stretch;
+  padding-bottom: 6rem;
 }
 
 .ficha-info {
   width: 100vh;
   display: flex;
   justify-content: left;
-  align-items: stretch;
 }
 
 .ficha-titulo {
@@ -782,7 +781,7 @@ header .fa-times {
   font-weight: 700;
   font-family: var(--font2);
   color: var(--clr-black);
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .ficha-titulo-2 {
@@ -791,7 +790,7 @@ header .fa-times {
   font-weight: 700;
   font-family: var(--font2);
   color: var(--clr-black);
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .ficha-descrip {
@@ -799,26 +798,27 @@ header .fa-times {
   font-weight: 300;
   font-family: var(--font2);
   color: var(--clr-black);
-  padding: 1rem;
+  padding: 0.5rem;
   padding-left: 2rem;
   line-height: 1.5;
 }
 
 .ficha-descrip p {
-  padding: 1rem;
+  padding: 0.5rem;
   width: 80vh;
   display: flex;
   justify-content: left;
   align-items: stretch;
 }
 
-/* Caso 1 CSS - section_2 */
+.ficha-descrip li {
+  list-style: none;
+  padding: 0.5rem;
+}
 
-.section_2 {
-  height: 100vh;
-  width: 100vh;
-  margin: 10% auto;
-  background-color: var(--clr-lila);
+/* Caso 1 CSS - section_2 */
+.section_titulo {
+  padding-bottom: 1rem;
 }
 
 .section_titulo h2 {
@@ -826,14 +826,26 @@ header .fa-times {
   font-size: 2rem;
   /* line-height: 2rem; */
   color: var(--clr-primary);
-  /* padding: 1rem; */
+  padding-bottom: 1rem;
+}
+
+.section_2 {
+  height: 40vh;
+  width: 100vh;
+  margin: 0 auto;
+  /* background-color: var(--clr-lila); */
 }
 
 .section_3 {
   height: 40vh;
   width: 100vh;
-  margin: 10% auto;
-  background-color: var(--clr-lila);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.section_3-caso {
+  display: flex;
 }
 
 @media screen and (max-width: 880px) {
