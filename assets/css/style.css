@@ -340,7 +340,7 @@ header .fa-times {
 }
 
 .section-title {
-  color: var(--clr-blue);
+  color: var(--clr-primary);
   font-family: var(--font1);
   font-size: 3rem;
   margin-bottom: 3rem;
@@ -375,7 +375,7 @@ header .fa-times {
 }
 
 .about__description p span {
-  color: var(--clr-primary);
+  color: var(--clr-blue);
 }
 
 /* projects section */
@@ -395,6 +395,10 @@ header .fa-times {
   justify-content: center;
   text-align: center;
   /* border: solid 1px red; */
+}
+
+.uxui__description p span {
+  color: var(--clr-blue);
 }
 
 .containerux {
@@ -493,6 +497,10 @@ header .fa-times {
   grid-template-columns: 50%;
   justify-content: center;
   text-align: center;
+}
+
+.skills__p span {
+  color: var(--clr-blue);
 }
 /* comunication section  */
 
