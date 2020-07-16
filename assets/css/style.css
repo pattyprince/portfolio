@@ -2,10 +2,10 @@
   --clr-primary: #6a2c70;
   --clr-secondary: #b83b5e;
   --clr-blue: #ec8541;
-  --clr-white: #ecebeb;
+  --clr-white: #fffefe;
   --clr-beige: #fffef6;
   --clr-black: #333;
-  --clr-gray: #ccc;
+  --clr-gray: rgb(248, 248, 248);
   --clr-dark-gray: #666;
   --clr-overlay: rgba(0, 0, 0, 0.8);
   --clr-lila: #fcf1fd;
@@ -358,7 +358,6 @@ header .fa-times {
 
 .main__content {
   margin: 0 auto;
-  max-width: 1400px;
 }
 
 /* MAIN */
@@ -426,7 +425,6 @@ header .fa-times {
   grid-template-columns: 80%;
   justify-content: center;
   text-align: center;
-  /* border: solid 1px red; */
 }
 
 .uxui__description p span {
@@ -489,6 +487,11 @@ header .fa-times {
   height: 100%;
   margin: 10px;
   border-radius: 5px;
+}
+
+.single-content p {
+  margin-top: 0;
+  line-height: 1.5rem;
 }
 
 /* skills secton  */
@@ -770,7 +773,7 @@ header .fa-times {
   padding-top: 4rem;
 }
 
-.header_back {
+.header_back-1 {
   background: url("../images/map-person.jpg") left center no-repeat;
   background-size: cover;
   position: absolute;
@@ -797,16 +800,17 @@ header .fa-times {
   font-size: 4.8rem;
   line-height: 5rem;
   color: var(--clr-beige);
-  /* text-shadow: 0px 0px 1px var(--clr-black); */
+  text-shadow: 2px 2px 4px var(--clr-black);
 }
 
 .header__left-caso-1 p {
-  width: 80%;
+  width: 70%;
   font-size: 1.7rem;
   font-weight: 300;
   font-family: var(--font2);
   color: var(--clr-beige);
   padding-top: 3rem;
+  text-shadow: 2px 2px 4px var(--clr-black);
 }
 
 .chevron__container-caso-1 {
@@ -985,6 +989,7 @@ header .fa-times {
 }
 
 .arquetipo-texto {
+  width: 50%;
   padding-left: 2rem;
 }
 
@@ -1030,6 +1035,65 @@ header .fa-times {
   margin: 0 auto;
   text-align: center;
   padding-bottom: 20px;
+}
+
+/* Caso 2: Eymi */
+.header-caso-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.header__caso-2 {
+  height: 40vh;
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  padding-top: 4rem;
+}
+
+.header_back-2 {
+  background: url("../images/eymi-m.png") right no-repeat;
+  background-size: cover;
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
+
+.header__left-caso-2 h1 {
+  font-family: var(--font1);
+  font-size: 4.8rem;
+  line-height: 5rem;
+  color: var(--clr-beige);
+  text-shadow: 2px 2px 4px var(--clr-black);
+}
+
+.header__left-caso-2 p {
+  width: 80%;
+  font-size: 1.8rem;
+  font-weight: 300;
+  font-family: var(--font2);
+  color: var(--clr-beige);
+  text-shadow: 0px 0px 6px var(--clr-black);
+  padding-top: 3rem;
 }
 
 @media screen and (max-width: 880px) {
