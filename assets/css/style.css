@@ -324,7 +324,7 @@ header .fa-times {
   z-index: 2;
   position: absolute;
   top: 80%;
-  left: 55%;
+  left: 50%;
   transform: translate(-50%, -50%);
   margin: 0;
   padding: 0;
@@ -414,7 +414,7 @@ header .fa-times {
 }
 
 .about__description p span {
-  color: var(--clr-blue);
+  color: var(--clr-secondary);
 }
 
 /* projects section */
@@ -541,16 +541,10 @@ header .fa-times {
   padding-top: 4rem;
   padding-bottom: 1rem;
 }
-.comunication-a {
-  /* display: flex; */
-  /* justify-content: space-between;
-  align-items: center;
-} */
-}
+
 .comunication-reverse {
   width: 100%;
   padding: 0;
-  border: solid 2px green;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -566,7 +560,6 @@ header .fa-times {
 
 .comunication-image {
   padding: 0;
-  border: solid 2px blue;
 }
 
 .comunication-desc {
@@ -580,7 +573,6 @@ header .fa-times {
   justify-content: center;
   align-items: center;
   vertical-align: middle;
-  border: solid 2px red;
 }
 
 .comunication-desc img {
@@ -592,7 +584,6 @@ header .fa-times {
 .comunication-desc p {
   width: 100%;
   padding-left: 2rem;
-  border: solid 2px orange;
   margin: 0 auto;
 }
 
@@ -1201,6 +1192,9 @@ header .fa-times {
     padding-bottom: 1rem;
   }
 
+  /* .comunication-image img {
+    border-radius: 5px;
+  } */
   .contact-container {
     width: 100%;
     height: 50%;
@@ -1365,39 +1359,41 @@ header .fa-times {
     font-size: 8rem;
   }
 
-  .comunication-a,
-  .comunication-reverse {
+  .comunication-a {
     width: 100%;
-    flex-direction: column-reverse;
+    flex-direction: column;
     margin: 0 auto;
     padding-top: 2rem;
   }
 
-  .comunication-a,
-  .comunication-reverse p {
+  .comunication-desc {
+    width: 100%;
+    padding-top: 0.5rem;
+    flex-direction: column;
     margin: 0 auto;
-    padding-bottom: 0.5rem;
   }
 
-  .comunication-desc {
-    width: 90%;
-    padding-top: 0.5rem;
+  .comunication-container h3 {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+
+  .comunication-desc img {
+    width: 100%;
+    border-radius: 5px;
+    margin: 0 auto;
   }
 
   .comunication-desc p {
-    margin: 0 auto;
-    padding-top: 0.5rem;
-  }
-
-  .comunication-desc h3 {
-    padding-bottom: 1.5rem;
-  }
-
-  .comunication-image {
     width: 100%;
-    height: 100%;
     margin: 0 auto;
-    padding: 0;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .reverse p {
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 
   .contact-container {
@@ -1438,8 +1434,8 @@ header .fa-times {
     justify-content: center;
     text-align: center;
     margin: 0 auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 
   .footer p {
