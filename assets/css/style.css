@@ -226,6 +226,8 @@ header .fa-times {
   color: var(--clr-beige);
   text-shadow: 0px 0px 6px var(--clr-black);
   margin-bottom: 10px;
+  top: 50%;
+  left: 50%;
 }
 
 /* css profesion inicia */
@@ -398,6 +400,7 @@ header .fa-times {
   background: url("../images/avataaars.svg") no-repeat;
   background-size: cover;
   background-position: center;
+  width: 70%;
   height: 100%;
   order: 2;
 }
@@ -556,6 +559,12 @@ header .fa-times {
 
 .reverse {
   padding: 0;
+}
+
+.comunication-reverse img {
+  width: 350px;
+  border-radius: 5px;
+  margin: 0 auto;
 }
 
 .comunication-image {
@@ -735,7 +744,7 @@ header .fa-times {
   width: 100%;
   height: 60px;
   background-color: var(--clr-blue);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 300;
   font-family: var(--font2);
   color: var(--clr-beige);
@@ -743,6 +752,7 @@ header .fa-times {
   padding-left: 2rem;
   line-height: 1.5;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -761,7 +771,7 @@ header .fa-times {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   position: relative;
   content: "";
@@ -944,12 +954,22 @@ header .fa-times {
   padding: 0px;
 }
 
+.section_titulo-heavy {
+  color: var(--clr-primary);
+  font-family: var(--font1);
+  font-style: italic;
+  font-size: 1.7rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .section_3 {
-  height: 55vh;
-  width: 100vh;
+  height: 55%;
+  width: 100vw;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding-bottom: 0.5rem;
 }
 
@@ -958,24 +978,34 @@ header .fa-times {
   padding: 0.5rem;
 }
 
+.ficha-info-users {
+  width: 62%;
+  display: flex;
+  flex-direction: row;
+  padding-top: 2rem;
+  margin: 0 auto;
+}
+
 /* Caso 1 - sección_4 */
 .section_4 {
+  width: 45%;
   height: 40vh;
-  width: 100vh;
   margin: 0 auto;
+  padding-top: 3rem;
 }
 
 /* Caso 1 - sección_5 */
 .section_5 {
   width: 100vh;
   margin: 0 auto;
+  padding-top: 3rem;
 }
 
 /* Caso 1 - sección_6 */
 .section_6 {
-  width: 65%;
+  width: 70%;
   margin: 0 auto;
-  padding-top: 40px;
+  padding-top: 3rem;
 }
 
 .section_6_img {
@@ -983,11 +1013,22 @@ header .fa-times {
   justify-content: center;
 }
 
+.section_6_img img {
+  width: 60%;
+}
+
+.single-content-caso p {
+  font-size: 14px;
+  font-family: var(--font2);
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
 /* Caso 1 - sección_7 */
 .section_7 {
   width: 65%;
   margin: 0 auto;
-  padding-top: 40px;
+  padding-top: 3rem;
 }
 
 .arquetipo {
@@ -1134,7 +1175,9 @@ header .fa-times {
   }
 
   .main__hero-left h1 {
+    font-size: 6rem;
     line-height: 6.5rem;
+    padding: 2rem;
   }
   .chevron__container {
     padding-top: 20rem;
@@ -1192,9 +1235,6 @@ header .fa-times {
     padding-bottom: 1rem;
   }
 
-  /* .comunication-image img {
-    border-radius: 5px;
-  } */
   .contact-container {
     width: 100%;
     height: 50%;
@@ -1235,6 +1275,123 @@ header .fa-times {
 
   .footer p {
     margin: 5px;
+  }
+
+  /* CASO 1 */
+  .header__left-caso-1 h1 {
+    font-family: var(--font1);
+    font-size: 4rem;
+    line-height: 5rem;
+    color: var(--clr-beige);
+    text-shadow: 2px 2px 4px var(--clr-black);
+  }
+
+  .header__left-caso-1 p {
+    width: 90%;
+    font-size: 1.7rem;
+    font-weight: 300;
+    font-family: var(--font2);
+    color: var(--clr-beige);
+    padding-top: 3rem;
+    text-shadow: 2px 2px 4px var(--clr-black);
+  }
+
+  .main__caso {
+    width: 100%;
+  }
+
+  .section_titulo {
+    text-align: center;
+    padding-top: 2rem;
+    margin: 0;
+  }
+  .ficha-section {
+    width: 85%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .ficha-caso {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3rem;
+  }
+
+  .section_2 {
+    width: 100%;
+    max-height: 150px;
+    padding-bottom: 8rem;
+    margin: 0;
+  }
+
+  .ficha-caso p {
+    width: 100%;
+    margin: 0;
+  }
+
+  .ficha-contenedor {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+
+  .ficha-info {
+    width: 85vw;
+    margin: 0;
+    padding: 0;
+    line-height: 2.8rem;
+  }
+
+  .ficha-info p {
+    width: 75%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .ficha-titulo-2 {
+    padding: 0;
+    margin: 0;
+  }
+
+  .section_3 {
+    width: 50%;
+    height: 100%;
+  }
+
+  .ficha-info-users {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .ficha-info ul {
+    width: 50%;
+    margin: 0;
+  }
+
+  .ficha-info img {
+    width: 100%;
+  }
+  .section_4 {
+    width: 40%;
+    height: 30vh;
+    text-align: left;
+    padding-bottom: 0;
+  }
+  .section_5 {
+    width: 70%;
+  }
+  .section_7 {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .arquetipo-texto {
+    width: 70%;
   }
 }
 
@@ -1306,6 +1463,7 @@ header .fa-times {
   }
 
   .chevron__container {
+    padding-left: 5rem;
     padding-top: 10rem;
   }
 
@@ -1375,7 +1533,7 @@ header .fa-times {
 
   .comunication-container h3 {
     text-align: center;
-    padding-bottom: 1rem;
+    padding-bottom: 0;
   }
 
   .comunication-desc img {
@@ -1396,6 +1554,9 @@ header .fa-times {
     padding-right: 3rem;
   }
 
+  .comunication-reverse img {
+    padding-top: 2rem;
+  }
   .contact-container {
     width: 100%;
     height: 50%;
@@ -1440,5 +1601,228 @@ header .fa-times {
 
   .footer p {
     margin: 0 auto;
+  }
+  /* CASO 1 */
+  .main__caso {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    padding-top: 2rem;
+  }
+
+  .header-caso-1 {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .header__caso-1 {
+    width: 100%;
+  }
+
+  .header__left-caso-1 h1 {
+    font-family: var(--font1);
+    font-size: 3.2rem;
+    line-height: 3.6rem;
+    color: var(--clr-beige);
+    text-shadow: 2px 2px 4px var(--clr-black);
+    margin-left: 3rem;
+  }
+
+  .header__left-caso-1 p {
+    width: 90%;
+    padding-top: 2rem;
+    padding-right: 3rem;
+    margin-left: 3rem;
+  }
+
+  .section_titulo {
+    width: 90%;
+    padding: 0;
+    margin: 1rem;
+  }
+  .section_titulo-heavy {
+    color: var(--clr-primary);
+    font-family: var(--font1);
+    font-style: italic;
+    font-size: 1.5rem;
+    padding-top: 10rem;
+    margin: 2rem;
+    text-align: center;
+  }
+  .ficha-section {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 10rem;
+  }
+
+  .ficha-titulo {
+    margin: 0;
+    padding: 0;
+  }
+
+  .ficha-caso {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+    padding-left: 2.5rem;
+    margin: 0 auto;
+  }
+
+  .ficha-caso p {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+  }
+
+  .section_2 {
+    width: 100%;
+    padding-bottom: 8rem;
+    margin: 0;
+  }
+
+  .ficha-contenedor {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+
+  .ficha-descrip-2 {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: solid orange 2px;
+  }
+
+  .ficha-contenedor p {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .ficha-info {
+    widows: 100%;
+    margin: 0 auto;
+    padding: 0;
+    line-height: 2.8rem;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .ficha-info p {
+    width: 100%;
+    padding-right: 1rem;
+    margin: 0 auto;
+  }
+
+  .ficha-titulo-2 {
+    padding: 0;
+    margin: 0;
+  }
+
+  .section_3 {
+    width: 80%;
+    height: 100%;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .ficha-info-users {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .ficha-info-users img {
+    width: 250px;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+  }
+
+  .ficha-info ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .ficha-info img {
+    width: 100%;
+  }
+  .section_4 {
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    padding-bottom: 3rem;
+    margin: 0;
+  }
+  .section_5 {
+    width: 100%;
+    margin: 0 auto;
+    padding-right: 3rem;
+  }
+
+  .caso_in-map {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+  .caso_in-map p {
+    width: 65%;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .section_6_img img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .single-content-caso img {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 2rem;
+  }
+
+  .single-content-caso p {
+    font-size: 14px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .section_7 {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .arquetipo {
+    width: 100%;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+
+  .arquetipo-img {
+    width: 100%;
+    margin: 0;
+    padding-bottom: 1rem;
+  }
+
+  .arquetipo-texto {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    margin-bottom: 3rem;
   }
 }
