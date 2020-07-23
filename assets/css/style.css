@@ -395,7 +395,6 @@ header .fa-times {
   align-items: center;
   background-color: #fff;
   margin: 0 auto;
-  border: solid 2px red;
 }
 
 .about__portrait {
@@ -405,6 +404,7 @@ header .fa-times {
   width: 70%;
   height: 100%;
   order: 2;
+  margin: 0 auto;
 }
 
 .about__description {
@@ -758,41 +758,10 @@ header .fa-times {
   justify-content: center;
   align-items: center;
 }
-
-.contenido-relacionado {
-  width: 100%;
-  background-color: var(--clr-primary);
-  margin: auto 0;
-}
-
-.titulo-relacionado h3 {
-  font-size: 2.5rem;
-  font-weight: 400;
-  font-family: var(--font1);
-  color: var(--clr-beige);
-  text-align: center;
-  padding-top: 3rem;
-}
-
-.contenedor-rel {
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 3rem;
-  font-size: 2rem;
-  font-weight: 300;
-  font-family: var(--font2);
-  color: var(--clr-beige);
-}
-
-.contenedor-rel p {
-  padding-bottom: 1rem;
-}
-
 /* Caso 1-CSS */
 
 .main__caso {
   padding-top: 80px;
-  padding-bottom: 80px;
   width: 100%;
   margin: 0 auto;
 }
@@ -954,6 +923,12 @@ header .fa-times {
   padding: 0.5rem;
 }
 
+.ficha-descrip-2 {
+  width: 80%;
+  padding: 0;
+  margin: 0 auto;
+}
+
 /* Caso 1 CSS - section_2 */
 
 .section_titulo h2 {
@@ -1017,6 +992,10 @@ header .fa-times {
   margin: 0 auto;
 }
 
+.ficha-info-users img {
+  border-radius: 5px;
+}
+
 /* Caso 1 - sección_4 */
 .section_4 {
   width: 45%;
@@ -1045,12 +1024,14 @@ header .fa-times {
 }
 
 .section_6_img img {
-  width: 60%;
+  width: 65%;
+  border-radius: 5px;
 }
 
 .single-content-caso p {
   font-size: 14px;
   font-family: var(--font2);
+  font-weight: 300;
   padding-bottom: 2rem;
   text-align: center;
 }
@@ -1073,6 +1054,10 @@ header .fa-times {
   display: flex;
 }
 
+.arquetipo-img img {
+  border-radius: 5px;
+}
+
 .arquetipo-texto {
   width: 50%;
   padding-left: 2rem;
@@ -1080,6 +1065,43 @@ header .fa-times {
 
 .arquetipo-texto span {
   font-weight: 700;
+}
+
+.contenido-relacionado {
+  width: 100%;
+  background-color: var(--clr-primary);
+  margin-top: 3rem;
+  padding-bottom: 5rem;
+}
+
+.titulo-relacionado h3 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  font-family: var(--font1);
+  color: var(--clr-beige);
+  text-align: center;
+  padding-top: 3rem;
+  margin: 0em;
+}
+
+.contenedor-rel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  font-size: 1.7rem;
+  font-weight: 300;
+  font-family: var(--font2);
+  color: var(--clr-beige);
+}
+
+.contenedor-rel p {
+  padding-bottom: 1rem;
+}
+
+.contenedor-rel img {
+  margin-right: 5rem;
+  border-radius: 5px;
 }
 
 /* Fin sección 7 */
@@ -1103,6 +1125,9 @@ header .fa-times {
 
 .caso_in p {
   padding-bottom: 2rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+  font-family: var(--font2);
 }
 
 .caso_in-map {
@@ -1296,6 +1321,38 @@ header .fa-times {
     border-radius: 0 0 1em 1em;
   }
 
+  .titulo-relacionado {
+    padding-bottom: 2rem;
+  }
+
+  .contenido-relacionado {
+    margin: 0 auto;
+  }
+
+  .contenedor-rel {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+    margin: 0 auto;
+  }
+
+  .contenedor-rel p {
+    padding-bottom: 2rem;
+  }
+
+  .cont-rel-left,
+  .cont-rel-right {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .contenedor-rel img {
+    width: 80%;
+    margin: 0 auto;
+  }
+
   .footer {
     width: 100%;
     height: 120px;
@@ -1416,7 +1473,48 @@ header .fa-times {
   }
   .section_5 {
     width: 70%;
+    padding: 0;
+    margin: 0 auto;
   }
+
+  .caso_in {
+    padding-left: 3rem;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-family: var(--font2);
+  }
+
+  .caso_in-map p {
+    width: 100%;
+    font-size: 1.5rem;
+    font-family: var(--font2);
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+  }
+
+  .single-content-caso p {
+    font-size: 1.5rem;
+    font-family: var(--font2);
+    font-weight: 300;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .section_6_img {
+    width: 100%;
+    height: 380px;
+    margin: 0;
+    padding: 0;
+  }
+  .section_6_img img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
   .section_7 {
     width: 80%;
     margin: 0 auto;
@@ -1725,13 +1823,6 @@ header .fa-times {
     margin: 0;
   }
 
-  .ficha-descrip-2 {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    border: solid orange 2px;
-  }
-
   .ficha-contenedor p {
     width: 100%;
     padding: 0;
@@ -1802,19 +1893,16 @@ header .fa-times {
   }
 
   .caso_in-map {
-    width: 100vw;
-    margin: 0;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
     padding: 0;
   }
   .caso_in-map p {
-    width: 65%;
-    font-size: 14px;
-    margin: 0;
-    padding: 0;
-  }
-
-  .section_6_img img {
     width: 100%;
+    font-size: 1.5rem;
+    font-family: var(--font2);
+    font-weight: 300;
     margin: 0;
     padding: 0;
   }
@@ -1826,9 +1914,23 @@ header .fa-times {
   }
 
   .single-content-caso p {
-    font-size: 14px;
+    font-size: 1.5rem;
+    font-family: var(--font2);
+    font-weight: 300;
     text-align: center;
     margin: 0 auto;
+    padding: 0;
+  }
+
+  .section_6_img {
+    width: 100%;
+    height: 180px;
+    margin: 0;
+    padding: 0;
+  }
+  .section_6_img img {
+    width: 100%;
+    margin: 0;
     padding: 0;
   }
 
@@ -1836,7 +1938,6 @@ header .fa-times {
     width: 80%;
     margin: 0 auto;
   }
-
   .arquetipo {
     width: 100%;
     flex-direction: column;
@@ -1846,8 +1947,15 @@ header .fa-times {
 
   .arquetipo-img {
     width: 100%;
-    margin: 0;
+    margin: 0 auto;
+    text-align: center;
     padding-bottom: 1rem;
+  }
+
+  .arquetipo-img img {
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 5px;
   }
 
   .arquetipo-texto {
@@ -1855,5 +1963,92 @@ header .fa-times {
     margin: 0 auto;
     padding: 1rem;
     margin-bottom: 3rem;
+    font-size: 14px;
+    font-family: var(--font2);
+    font-weight: 300;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  /* Caso 2: Eymi */
+  .header-caso-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    margin: 0;
+  }
+
+  .header__caso-2 {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    padding: 0;
+  }
+
+  .header_back-2 {
+    width: 100%;
+    background: url("../images/eymi-m.png") right no-repeat;
+    background-size: cover;
+    background-position: left;
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+  }
+
+  .header__left-caso-2 h1 {
+    font-family: var(--font1);
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 3.6rem;
+    color: var(--clr-beige);
+    text-shadow: 2px 2px 4px var(--clr-black);
+    text-align: left;
+    padding: 3rem 2rem 0 2rem;
+    margin: 0 auto;
+  }
+
+  .header__left-caso-2 p {
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: var(--font2);
+    color: var(--clr-beige);
+    text-shadow: 0px 0px 6px var(--clr-black);
+    padding: 3rem 2rem 0 2rem;
+    margin: 0 auto;
+  }
+
+  .ficha-section {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    border: 1px blue solid;
+  }
+
+  .ficha-contenedor {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    border: 1px red solid;
+  }
+  .ficha-info {
+    padding-bottom: 1.5rem;
   }
 }
