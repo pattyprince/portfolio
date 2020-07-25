@@ -1824,6 +1824,11 @@ header .fa-times {
     margin: 0;
   }
 
+  .ficha-descrip {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+  }
   .ficha-contenedor p {
     width: 100%;
     padding: 0;
@@ -1833,7 +1838,7 @@ header .fa-times {
   .ficha-info {
     widows: 100%;
     margin: 0 auto;
-    padding: 0;
+    padding: 1rem 0;
     line-height: 2.8rem;
     flex-direction: column;
     justify-content: center;
@@ -1848,6 +1853,12 @@ header .fa-times {
   .ficha-titulo-2 {
     padding: 0;
     margin: 0;
+  }
+
+  .section_titulo-heavy h2 {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 4rem;
   }
 
   .section_3 {
@@ -1922,7 +1933,9 @@ header .fa-times {
     margin: 0 auto;
     padding: 0;
   }
-
+  .section_6 {
+    width: 85%;
+  }
   .section_6_img {
     width: 100%;
     height: 180px;
@@ -1968,10 +1981,12 @@ header .fa-times {
     font-family: var(--font2);
     font-weight: 300;
   }
+
+  /* Fin Caso 1 */
 }
 
 @media screen and (min-width: 320px) {
-  /* Caso 2: Eymi */
+  /* Inicio Caso 2: Eymi */
   .header-caso-2 {
     display: flex;
     flex-direction: column;
@@ -2041,24 +2056,53 @@ header .fa-times {
     padding: 3rem 2rem 0 2rem;
     margin: 0 auto;
   }
-
-  .ficha-titulo {
-    width: 100%;
+  .section-2-caso-2 {
+    padding: 0 1rem;
   }
 
-  .ficha-section {
+  .ficha-titulo-caso-2 {
+    width: 100%;
+    font-size: 1.7rem;
+    font-weight: 700;
+    font-family: var(--font2);
+    color: var(--clr-black);
+    padding-left: 2rem;
+    margin: 0;
+  }
+
+  .ficha-section-caso-2 {
     width: 100%;
     margin: 0 auto;
     padding: 0;
   }
 
-  .ficha-contenedor {
+  .ficha-contenedor-caso-2 {
     width: 100%;
     margin: 0 auto;
-    padding: 0;
+    padding: 0 1rem;
   }
-  .ficha-info {
+  .ficha-info-caso-2 {
     padding-bottom: 1.5rem;
+  }
+
+  .ficha-descrip-caso-2 {
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-family: var(--font2);
+    color: var(--clr-black);
+    padding: 0 2rem;
+    line-height: 1.5;
+  }
+  .section_3-caso-2 {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .entre-caso-2 {
+    width: 100%;
+    padding: 0;
+    margin: 0;
   }
 
   .entrevista {
@@ -2067,7 +2111,7 @@ header .fa-times {
     font-family: var(--font2);
     font-weight: 300;
     margin: 0 auto;
-    padding: 1rem;
+    padding: 1.2rem 2.7rem;
     line-height: 1.7rem;
   }
 
