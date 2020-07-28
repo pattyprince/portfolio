@@ -2121,4 +2121,74 @@ header .fa-times {
     font-weight: 700;
     line-height: 1rem;
   }
+
+  .section-arquetipo-caso-2 {
+    width: 100%;
+    background-color: #ffffff;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+  }
+  .benchmark-caso-2 {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .bench-texto,
+  .cs-texto,
+  .fi-t-caso-2,
+  .mp-t-caso-2 p,
+  .wf-t-caso-2,
+  .interfaz-caso-2 {
+    width: 100%;
+    font-size: 1.5rem;
+    font-family: var(--font2);
+    font-weight: 300;
+    text-align: left;
+    margin: 0 auto;
+    padding: 0 2.7rem;
+    line-height: 1.7rem;
+  }
+
+  .cs-texto img,
+  .wf-t-caso-2 img,
+  .fi-t-caso-2 img,
+  .interf-t-caso-2 img {
+    width: 100%;
+    padding: 2rem 0;
+    margin: 0 auto;
+  }
+
+  .mp-t-caso-2 img {
+    width: 100%;
+    padding: 1.2rem 2.7rem;
+    margin: 0 auto;
+  }
+
+  .mood-text {
+    width: 100%;
+    font-size: 1.5rem;
+    font-family: var(--font2);
+    font-weight: 300;
+  }
+
+  .mood-text h3 {
+    color: var(--clr-secondary);
+    padding-bottom: 2rem;
+  }
+  .mood-text p {
+    width: 100%;
+    font-size: 1.5rem;
+    font-family: var(--font2);
+    font-weight: 300;
+    padding-bottom: 2rem;
+  }
+  .mood-text li {
+    list-style: none;
+  }
+  .mood-text img {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
