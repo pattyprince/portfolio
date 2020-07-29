@@ -1406,14 +1406,10 @@ header .fa-times {
   padding: 0 3rem;
 }
 
-.fi-caso-2 {
-  padding: 5rem;
-}
-
 .fi-t-caso-2 img {
-  width: 100%;
-  padding: 0 5rem;
+  width: 90%;
   margin: 0 auto;
+  padding-left: 18rem;
 }
 
 .fi-t-caso-2 p {
@@ -1447,7 +1443,7 @@ header .fa-times {
 }
 
 .wf-t-caso-2 img {
-  width: 100%;
+  width: 90%;
   padding: 0;
   margin: 0 auto;
 }
@@ -1471,23 +1467,52 @@ header .fa-times {
   margin: 0 auto;
 }
 
-.mood-text {
-  width: 100%;
+.mood-text,
+.interf-t-caso-2 {
+  width: 70%;
   font-size: 1.5rem;
   font-family: var(--font2);
   font-weight: 300;
+  padding-top: 2rem;
+  margin: 0 auto;
 }
 
-.mood-text h3 {
+.mood-list {
   color: var(--clr-secondary);
-  padding-bottom: 2rem;
+  font-size: 1.5rem;
+  font-family: var(--font1);
+  font-weight: 700;
+  padding: 0 3rem;
 }
-.mood-text p {
+
+.mood-list li {
+  width: 50%;
+  padding: 1rem;
+}
+
+.mood-concept {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.mood-concept-img {
+  width: 40%;
+}
+
+.mood-text h3,
+.interf-t-caso-2 h3 {
+  color: var(--clr-secondary);
+  padding: 2rem;
+}
+.mood-text p,
+.interf-t-caso-2 p {
+  width: 50%;
   font-size: 1.5rem;
   font-family: var(--font2);
   font-weight: 300;
-  padding-bottom: 2rem;
+  padding: 0 0 1rem 2rem;
 }
 .mood-text li {
   list-style: none;
@@ -1495,6 +1520,27 @@ header .fa-times {
 .mood-text img {
   width: 100%;
   margin: 0 auto;
+}
+
+.interf-t-caso-2 {
+  width: 70%;
+  margin: 0 auto;
+  /* border: solid 1px red; */
+}
+
+.interf-t-caso-2 img {
+  width: 60%;
+}
+
+.faz-caso-2 {
+  display: flex;
+}
+
+.faz-caso-2 p {
+  width: 30%;
+}
+.faz-caso-2 img {
+  width: 100%;
 }
 
 @media screen and (max-width: 880px) {
