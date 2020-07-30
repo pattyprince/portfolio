@@ -1277,6 +1277,32 @@ header .fa-times {
 .ficha-descrip-caso-2 li {
   list-style: none;
 }
+.proceso-caso-2 {
+  color: var(--clr-primary);
+  font-family: var(--font1);
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.pro-caso-2 h2 {
+  padding-bottom: 5rem;
+}
+
+.problema-caso-2 {
+  width: 50%;
+  margin: 0 auto;
+  padding: 5rem;
+}
+.entender-problema {
+  width: 100%;
+}
+.entender-problema h2 {
+  color: var(--clr-black);
+  font-family: var(--font2);
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  text-align: left;
+}
 
 .entrev-caso-2 {
   width: 50%;
@@ -1299,28 +1325,38 @@ header .fa-times {
   margin: 0;
 }
 
+.entrev-caso-2 {
+  width: 55%;
+  text-align: left;
+  margin: 0;
+  padding: 2rem 5rem 5rem 20rem;
+}
+
 .entrev-insight {
-  width: 70%;
+  width: 80%;
   display: flex;
   margin: 0 auto;
 }
 
 .entrevista {
+  background-color: var(--clr-primary);
   width: 30%;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-family: var(--font2);
   font-weight: 300;
+  color: var(--clr-beige);
   margin: 0 auto;
-  padding: 1.2rem 2.7rem;
-  line-height: 1.7rem;
+  padding: 2.7rem;
+  line-height: 2.5rem;
+  border-radius: 5px;
 }
 
 .entrevista span,
 .ficha-descrip-caso-2 span {
-  color: var(--clr-secondary);
-  font-size: 1.5rem;
-  font-weight: 700;
-  line-height: 1rem;
+  color: var(--clr-blue);
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 1.5rem;
 }
 
 .section-arquetipo-caso-2 {
@@ -1384,8 +1420,26 @@ header .fa-times {
   width: 100%;
   margin: 0 auto;
   text-align: center;
-  padding: 4rem 0;
-  border: red solid 1px;
+  padding: 4rem;
+}
+.org-info {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.org-info h2 {
+  color: var(--clr-black);
+  font-family: var(--font2);
+  font-size: 2.5rem;
+  margin-bottom: 5rem;
+}
+.bench-texto-titulo {
+  width: 79%;
+  color: var(--clr-primary);
+  font-family: var(--font1);
+  font-size: 1.7rem;
+  margin: 0 auto;
+  padding-bottom: 3rem;
 }
 
 .benchmark-caso-2 h2 {
@@ -1393,33 +1447,36 @@ header .fa-times {
 }
 
 .benchmark-caso-2 p {
-  width: 45%;
+  width: 60%;
   font-size: 1.5rem;
   font-weight: 300;
   font-family: var(--font2);
   color: var(--clr-black);
-  padding-left: 18rem;
+  padding-left: 13rem;
   line-height: 1.5;
+  margin: 0;
 }
 
 .cs-texto {
-  width: 90%;
+  width: 71%;
   font-size: 1.5rem;
   font-weight: 300;
   font-family: var(--font2);
   color: var(--clr-black);
-  padding: 0 3rem 3rem 18rem;
+  margin: 0 auto;
   line-height: 1.5;
   display: flex;
+  margin-top: 1rem;
 }
 
 .cs-texto p {
-  width: 80%;
-  padding: 3rem;
+  width: 60%;
+  padding-right: 2rem;
+  margin-top: 1rem;
 }
 
 .mp-caso-2 {
-  padding-bottom: 5rem;
+  padding: 5rem 0;
 }
 
 .mp-t-caso-2 {
@@ -2522,6 +2579,16 @@ header .fa-times {
     padding: 0 2rem;
     line-height: 1.5;
   }
+
+  .proceso-caso-2 {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .proceso-caso-2 img {
+    width: 100%;
+  }
+
   .section_3-caso-2 {
     width: 100%;
     padding: 0 1rem;
@@ -2590,7 +2657,6 @@ header .fa-times {
 
   .mp-image-2 {
     width: 100%;
-    border: solid 1px red;
   }
 
   .mp-image-2 img {
