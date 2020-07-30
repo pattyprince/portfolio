@@ -1245,6 +1245,10 @@ header .fa-times {
   padding-bottom: 1.5rem;
 }
 
+.ficha-info-caso-2 h4 {
+  color: var(--clr-primary);
+}
+
 .titulo-caso-2 {
   color: var(--clr-primary);
   font-family: var(--font1);
@@ -1268,6 +1272,10 @@ header .fa-times {
   color: var(--clr-black);
   padding: 0 2rem;
   line-height: 1.5;
+}
+
+.ficha-descrip-caso-2 li {
+  list-style: none;
 }
 
 .entrev-caso-2 {
@@ -1307,9 +1315,10 @@ header .fa-times {
   line-height: 1.7rem;
 }
 
-.entrevista span {
+.entrevista span,
+.ficha-descrip-caso-2 span {
   color: var(--clr-secondary);
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 700;
   line-height: 1rem;
 }
@@ -1318,34 +1327,69 @@ header .fa-times {
   width: 100%;
   background-color: #fff;
   margin: 0 auto;
-  padding: 2rem;
+  padding-top: 5rem;
 }
 
 .arquetipo-caso-2 {
+  width: 65%;
   display: flex;
-  padding: 5rem;
+  padding: 5rem 0;
+  margin: 0 auto;
+}
+
+.arquetipo-foto {
+  padding: 0;
+  margin: 0 auto;
 }
 
 .arq-cont-caso-2 {
-  width: 30%;
+  width: 100%;
   height: 100%;
   display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-left: 5rem;
 }
 
+.arq-cont-caso-2 h3 {
+  width: 100%;
+  font-size: 2rem;
+  font-family: var(--font1);
+  font-weight: 400;
+  color: var(--clr-secondary);
+  line-height: 2rem;
+  margin: 0;
+  padding-bottom: 1rem;
+}
+
+.arq-cont-caso-2 p {
+  width: 100%;
+  font-size: 1.5rem;
+  font-family: var(--font2);
+  font-weight: 300;
+  line-height: 2rem;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
 .arquetipo-descrip {
   width: 100%;
   height: 60%;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 .benchmark-caso-2 {
   width: 100%;
   margin: 0 auto;
   text-align: center;
-  padding-bottom: 4rem;
+  padding: 4rem 0;
+  border: red solid 1px;
+}
+
+.benchmark-caso-2 h2 {
+  text-align: left;
 }
 
 .benchmark-caso-2 p {
@@ -1406,6 +1450,11 @@ header .fa-times {
   padding: 0 3rem;
 }
 
+.fi-caso-2 {
+  background-color: var(--clr-beige);
+  padding: 6rem 0;
+}
+
 .fi-t-caso-2 img {
   width: 90%;
   margin: 0 auto;
@@ -1431,9 +1480,11 @@ header .fa-times {
   padding: 5rem 0;
 }
 
-.wf-caso-2 h2,
-.wf-caso-2 p {
+.wf-caso-2 h2 {
+  width: 78%;
   color: var(--clr-beige);
+  padding: 0 5rem;
+  margin: 0 auto;
 }
 
 .wf-t-caso-2 {
@@ -1447,6 +1498,7 @@ header .fa-times {
 }
 
 .wf-t-caso-2 p {
+  color: var(--clr-beige);
   width: 40%;
   padding-bottom: 3rem;
 }
@@ -1465,7 +1517,7 @@ header .fa-times {
   font-weight: 300;
   text-align: left;
   margin: 0 auto;
-  padding: 0 2.7rem;
+  padding: 6rem 2.7rem;
   line-height: 1.7rem;
 }
 
@@ -1553,6 +1605,35 @@ header .fa-times {
 }
 .faz-2 img {
   width: 100%;
+}
+
+.test-descrip-caso-2 {
+  display: flex;
+}
+
+.test-descrip-caso-2 img {
+  width: 45%;
+  padding: 5rem 0;
+}
+
+.test-descrip-caso-2 p {
+  width: 40%;
+  font-size: 1.5rem;
+  font-family: var(--font2);
+  font-weight: 700;
+  padding: 3rem 3rem 3rem 20rem;
+}
+.cont-rel {
+  margin: 2rem;
+}
+
+.cont-rel p,
+.cont-rel img {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+  border-radius: 5px;
 }
 
 @media screen and (max-width: 880px) {
@@ -2505,6 +2586,15 @@ header .fa-times {
     width: 100%;
     padding: 2rem 0;
     margin: 0 auto;
+  }
+
+  .mp-image-2 {
+    width: 100%;
+    border: solid 1px red;
+  }
+
+  .mp-image-2 img {
+    width: 100%;
   }
 
   .mp-t-caso-2 img {
