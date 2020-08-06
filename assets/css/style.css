@@ -1165,11 +1165,10 @@ header .fa-times {
 }
 
 .header__caso-2 {
-  height: 40vh;
-  width: 60%;
-  margin: auto;
+  height: 80vh;
+  width: 80%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   z-index: 2;
   padding-top: 4rem;
@@ -1191,8 +1190,8 @@ header .fa-times {
 }
 
 .header__left-caso-2 {
-  width: 70%;
-  padding-top: 5rem;
+  width: 60%;
+  padding-bottom: 6rem;
 }
 
 .header__left-caso-2 h1 {
@@ -1203,15 +1202,16 @@ header .fa-times {
   line-height: 5rem;
   color: var(--clr-beige);
   text-shadow: 2px 2px 4px var(--clr-black);
+  padding-bottom: 3rem;
 }
 
 .header__left-caso-2 p {
   width: 70%;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: 300;
   font-family: var(--font2);
   color: var(--clr-beige);
-  padding-top: 3rem;
+  padding-top: 2rem;
   text-shadow: 2px 2px 4px var(--clr-black);
 }
 
@@ -1434,6 +1434,7 @@ header .fa-times {
   font-size: 2.5rem;
   margin-bottom: 5rem;
 }
+
 .bench-texto-titulo {
   width: 79%;
   color: var(--clr-primary);
@@ -1441,6 +1442,13 @@ header .fa-times {
   font-size: 1.7rem;
   margin: 0 auto;
   padding-bottom: 3rem;
+}
+
+.bench-intro {
+  width: 70%;
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .benchmark-caso-2 h2 {
@@ -1668,13 +1676,19 @@ header .fa-times {
 .interf-t-caso-2 {
   width: 70%;
   margin: 0 auto;
-  /* border: solid 1px red; */
 }
 
-.interf-t-caso-2 img {
-  width: 50%;
+.interf-t-caso-2 img,
+.faz-caso-2 img {
+  width: 40%;
 }
-
+.tipografia {
+  width: 100%;
+  text-align: right;
+}
+.tipografia img {
+  width: 45%;
+}
 .faz-caso-2 {
   display: flex;
 }
@@ -1683,11 +1697,36 @@ header .fa-times {
   width: 50%;
   padding-top: 10rem;
 }
-.faz-caso-2 img {
-  width: 60%;
-}
+
 .faz-2 img {
   width: 100%;
+}
+.branding-logo img {
+  width: 100%;
+}
+.prototipo-caso-2 {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 6rem;
+}
+
+.prototipo-caso-2 h3 {
+  width: 100%;
+  color: var(--clr-secondary);
+  font-size: 1.7rem;
+  font-family: var(--font2);
+  padding: 0 3rem;
+}
+
+.prototipo-caso-2 img {
+  position: relative;
+}
+
+.prototipo-caso-2 p {
+  width: 35%;
+  position: absolute;
 }
 
 .pru-usab {
