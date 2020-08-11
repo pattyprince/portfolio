@@ -399,7 +399,7 @@ header .fa-times {
 
 .about__portrait {
   background: url("../images/avataaars.svg") no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   width: 70%;
   height: 100%;
@@ -728,7 +728,7 @@ header .fa-times {
 .btn-submit {
   border: none;
   padding: 2rem;
-  margin-top: 4rem;
+  margin-top: 1.5rem;
   background: var(--clr-primary);
   color: var(--clr-white);
   font-size: 1.5rem;
@@ -736,7 +736,7 @@ header .fa-times {
 
 .btn-submit:hover {
   padding: 2rem;
-  margin-top: 4rem;
+  margin-top: 1.5rem;
   border: solid 1px var(--clr-primary);
   background: var(--clr-white);
   color: var(--clr-black);
@@ -1362,11 +1362,15 @@ header .fa-times {
 .ficha-descrip-caso-2 span,
 .bench-intro span,
 .fi-t-caso-2 span,
-.branding-logo span {
+.branding-logo span,
+.interfaz-flex span {
   color: var(--clr-secondary);
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 1.5rem;
+}
+.interfaz-flex span a {
+  color: var(--clr-secondary);
 }
 
 .section-arquetipo-caso-2 {
@@ -3018,7 +3022,6 @@ header .fa-times {
     text-align: left;
     margin: 0 auto;
     padding: 2rem 0 0 0.4rem;
-    border: solid 1px red;
   }
 
   .dis-inter {
