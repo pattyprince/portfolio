@@ -2653,7 +2653,7 @@ header .fa-times {
   /* Fin Caso 1 */
 }
 
-@media screen and (max-width: 320px) {
+@media only screen and (max-width: 880px) {
   /* Inicio Caso 2: Eymi */
   .header-caso-2 {
     display: flex;
