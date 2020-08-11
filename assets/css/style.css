@@ -1340,7 +1340,7 @@ header .fa-times {
 }
 
 .entrevista {
-  background-color: var(--clr-primary);
+  background-color: var(--clr-blue);
   width: 30%;
   font-size: 1.7rem;
   font-family: var(--font2);
@@ -1352,11 +1352,20 @@ header .fa-times {
   border-radius: 5px;
 }
 
-.entrevista span,
-.ficha-descrip-caso-2 span {
-  color: var(--clr-blue);
+.entrevista span {
+  color: var(--clr-primary);
   font-size: 1.7rem;
-  font-weight: 400;
+  font-weight: 700;
+  line-height: 1.5rem;
+}
+
+.ficha-descrip-caso-2 span,
+.bench-intro span,
+.fi-t-caso-2 span,
+.branding-logo span {
+  color: var(--clr-secondary);
+  font-size: 1.5rem;
+  font-weight: 500;
   line-height: 1.5rem;
 }
 
@@ -1547,14 +1556,13 @@ header .fa-times {
 }
 
 .fi-t-caso-2 p {
-  width: 50%;
+  width: 60%;
   font-size: 1.5rem;
   font-weight: 300;
   font-family: var(--font2);
   color: var(--clr-black);
   padding: 3rem 3rem 3rem 20rem;
   line-height: 1.5;
-  display: flex;
 }
 
 .wf-caso-2 {
