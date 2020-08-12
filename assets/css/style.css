@@ -55,6 +55,16 @@ i {
   left: 2rem;
   top: 2rem;
   z-index: 99999;
+
+  /* display: none;
+  position: fixed;
+  left: 0rem;
+  right: 0;
+  top: 0rem;
+  z-index: 999;
+  background-color: rgba(92, 84, 84, 0.288);
+  display: inline-block;
+  padding: 2rem; */
 }
 
 .logo p {
@@ -390,9 +400,7 @@ header .fa-times {
 
 .about-profile-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: center;
-  align-items: center;
+  grid-template-columns: 1fr 0.6fr;
   background-color: #fff;
   margin: 0 auto;
 }
@@ -401,7 +409,7 @@ header .fa-times {
   background: url("../images/avataaars.svg") no-repeat;
   background-size: contain;
   background-position: center;
-  width: 70%;
+  width: 100%;
   height: 100%;
   order: 2;
   margin: 0 auto;
@@ -429,7 +437,7 @@ header .fa-times {
   background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23666666' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
 }
 
-.uxui__description p {
+.uxui__description {
   line-height: 1.5;
   font-family: var(--font2);
   font-size: 1.7rem;
@@ -440,7 +448,7 @@ header .fa-times {
   text-align: center;
 }
 
-.uxui__description p span {
+.uxui__description span {
   color: var(--clr-blue);
 }
 
@@ -479,12 +487,22 @@ header .fa-times {
   border: 1px solid var(--clr-secondary);
   border-radius: 15px;
 }
-
-.p2:hover {
-  opacity: 0.3;
-  cursor: pointer;
+.uxui_card {
+  margin-bottom: 3rem;
+  background: white;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 1px 6px 0px rgba(92, 91, 91, 0.473);
+  -moz-box-shadow: 0px 1px 6px 0px rgba(92, 91, 91, 0.473);
+  box-shadow: 0px 1px 6px 0px rgba(92, 91, 91, 0.473);
 }
-
+.uxui_card_header {
+  padding: 0px;
+  overflow: hidden;
+  border-radius: 5px 5px 0 0;
+  background-color: red;
+  width: 280px;
+  height: 280px;
+}
 .content-uxui {
   width: 100%;
   margin: 0 auto;
@@ -496,17 +514,22 @@ header .fa-times {
 }
 
 .single-content img {
-  width: 280px;
+  width: 100%;
   height: 100%;
-  margin-top: 10px;
-  border-radius: 5px;
+  border-radius: 5px 5px 0 0;
+  transition: all ease-in-out 0.3s;
+}
+.single-content img:hover {
+  opacity: 0.6;
+  cursor: pointer;
+  transform: scale(1.25) rotate(2deg);
 }
 
 .single-content p {
   width: 100%;
   font-size: 1.5rem;
   line-height: 1.5rem;
-  padding-top: 0.5rem;
+  padding: 1rem;
 }
 
 /* skills secton  */
@@ -1912,10 +1935,6 @@ header .fa-times {
     margin: 1rem;
   }
 
-  .containerux {
-    margin: 0 auto;
-  }
-
   .skills-container {
     width: 100%;
     padding-left: 2rem;
@@ -2278,37 +2297,6 @@ header .fa-times {
   .about__description {
     width: 100%;
     padding: 2rem;
-  }
-
-  .content-uxui,
-  .grid-item {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0;
-  }
-
-  .grid-item {
-    margin: 0 auto;
-  }
-
-  .single-content img {
-    width: 280px;
-    height: 100%;
-    margin-top: 10px;
-    border-radius: 5px;
-  }
-
-  .single-content p {
-    width: 100%;
-    font-size: 1.6rem;
-    line-height: 1.5rem;
-    padding-top: 0.5rem;
-  }
-
-  .skills-container {
-    width: 100%;
-    padding-left: 2rem;
-    padding-right: 2rem;
   }
 
   .skills-container i {
