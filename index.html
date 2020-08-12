@@ -9,6 +9,7 @@
       href="./assets/images/favicon.png"
       type="image/x-icon"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
@@ -174,7 +175,12 @@
         </div>
       </section>
 
-      <section id="uxui" class="uxui-background">
+      <section
+        id="uxui"
+        class="uxui-background"
+        data-aos="zoom-in-up"
+        data-aos-duration="1000"
+      >
         <div class="section-container">
           <h2 class="section-title">UX / UI</h2>
           <div class="containerux container">
@@ -305,7 +311,7 @@
             <h3>Diseño UX/UI</h3>
             <div class="comunication-a">
               <div class="comunication-desc">
-                <div class="comunication-image">
+                <div class="comunication-image" data-aos="zoom-in-right">
                   <img src="./assets/images/ux-dis.png" alt="" />
                 </div>
                 <div>
@@ -345,14 +351,14 @@
                   proyectos estratégicos de las empresas.
                 </p>
               </div>
-              <div class="comunication-image">
+              <div class="comunication-image" data-aos="zoom-in-left">
                 <img src="./assets/images/periodismo.png" alt="" />
               </div>
             </div>
             <h3>Comunicación Corporativa</h3>
             <div class="comunication-a">
               <div class="comunication-desc">
-                <div class="comunication-image">
+                <div class="comunication-image" data-aos="zoom-in-right">
                   <img
                     src="./assets/images/comun-corp.png"
                     alt="UX UI Design"
@@ -466,40 +472,16 @@
         <p>Algunas imágenes corresponden a Pexels.com</p>
       </footer>
     </main>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      const overlayLayer = document.querySelector(".overlay");
-      const navLayer = document.querySelector(".nav");
-      const menuList = document.querySelectorAll(".nav__menu-list a");
-
-      menuList.forEach((item) => {
-        item.addEventListener("click", handleToggleMenu);
-      });
-
-      function handleToggleMenu() {
-        navLayer.classList.toggle("nav-open");
-        overlayLayer.classList.toggle("overlay-active");
-      }
-    </script>
-    <script>
-      // When the user scrolls down 50px from the top of the document, resize the header's font size
-      window.onscroll = function () {
-        scrollFunction();
-      };
-
-      function scrollFunction() {
-        if (
-          document.body.scrollTop > 450 ||
-          document.documentElement.scrollTop > 450
-        ) {
-          document.querySelector(".logo").style.display = "block";
-        } else {
-          document.querySelector(".logo").style.display = "none";
-        }
-      }
+      AOS.init();
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
     <script>
+      //isotope
       $(document).ready(function () {
         $(".grid").isotope({
           itemSelector: ".grid-item",
@@ -518,5 +500,7 @@
         });
       });
     </script>
+
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
