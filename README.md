@@ -1,2 +1,5 @@
 # Portfolio Patricia Prince
-### Made it with HTML, CSS  and JS
+
+[Live ](https://pattyprince.github.io/portfolio/)
+
+### Made it with HTML, CSS and JS
